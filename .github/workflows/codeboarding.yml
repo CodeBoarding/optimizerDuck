@@ -1,0 +1,43 @@
+name: CodeBoarding review
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, ready_for_review, closed]
+  issue_comment:
+    types: [created]
+
+permissions: {}
+
+concurrency:
+  group: codeboarding-${{ github.event.pull_request.number || github.event.issue.number }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' && github.event.action == 'closed' }}
+
+jobs:
+  review:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    permissions:
+      contents: read
+      pull-requests: write
+      issues: write
+    if: >
+      (github.event_name == 'pull_request' && github.event.action != 'closed' && github.event.pull_request.draft == false) ||
+      (github.event_name == 'issue_comment' && github.event.issue.pull_request != null &&
+       startsWith(github.event.comment.body, '/codeboarding') &&
+       contains(fromJSON('["OWNER","MEMBER","COLLABORATOR"]'), github.event.comment.author_association))
+    steps:
+      - name: Verify Google API key secret is available
+        shell: bash
+        env:
+          GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
+        run: |
+          if [ -z "${GOOGLE_API_KEY}" ]; then
+            echo "::error::GOOGLE_API_KEY secret is missing or empty."
+            exit 1
+          fi
+          echo "GOOGLE_API_KEY secret is present."
+
+      - uses: CodeBoarding/CodeBoarding-action@fix/review-target-baseline
+        with:
+          llm_provider: google
+          llm_api_key: ${{ secrets.GOOGLE_API_KEY }}
