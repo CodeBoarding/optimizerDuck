@@ -436,8 +436,11 @@
   <data name="Service.Service.Error.NotFound" xml:space="preserve">
     <value>Nie znaleziono usługi</value>
   </data>
-  <data name="Service.Service.Error.UpdateRegistryForStartupTypeFailed" xml:space="preserve">
-    <value>Nie udało się zaktualizować rejestru dla typu uruchamiania</value>
+  <data name="Service.Service.Info.SkippedNotFound" xml:space="preserve">
+    <value>Nie znaleziono usługi '{0}' (pominięto)</value>
+  </data>
+  <data name="Service.Service.Error.ChangeStartupTypeFailed" xml:space="preserve">
+    <value>Nie udało się zmienić typu uruchamiania usługi</value>
   </data>
   <data name="Service.Service.Error.ChangeStartModeFailedWithCode" xml:space="preserve">
     <value>ChangeStartMode nie powiodło się (kod: {0})</value>
@@ -656,7 +659,7 @@
     <value>Zastosuj zoptymalizowany plan zasilania</value>
   </data>
   <data name="Optimizer.PowerManagement.InstallOptimizerDuckPowerPlan.ShortDescription" xml:space="preserve">
-    <value>Instaluje niestandardowy plan zasilania nastawiony na wydajność, aby system zawsze działał z maksymalną prędkością.</value>
+    <value>Instaluje niestandardowy plan zasilania nastawiony na wydajność, aby system zawsze działał z maksymalną prędkością. Ostrzeżenie: Może spowodować nieprawidłowe wyświetlanie 100% użycia CPU w Menedżerze zadań na niektórych systemach, rzeczywiste obciążenie CPU pozostaje bez zmian.</value>
   </data>
   <data name="Optimizer.PowerManagement.InstallOptimizerDuckPowerPlan.Progress.Importing" xml:space="preserve">
     <value>Importowanie i aktywowanie planu zasilania...</value>

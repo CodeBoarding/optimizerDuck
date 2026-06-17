@@ -122,196 +122,196 @@
         </value>
   </resheader>
   <data name="Dashboard.Header.Title" xml:space="preserve">
-    <value>Dashboard</value>
+    <value>Panel</value>
   </data>
   <data name="Sidebar.Dashboard" xml:space="preserve">
-    <value>Dashboard</value>
+    <value>Panel</value>
   </data>
   <data name="Sidebar.Settings" xml:space="preserve">
-    <value>Settings</value>
+    <value>Configuración</value>
   </data>
   <data name="Button.Close" xml:space="preserve">
-    <value>Close</value>
+    <value>Cerrar</value>
   </data>
   <data name="Dashboard.SystemInfo.Cpu.Cores" xml:space="preserve">
-    <value>{0} Cores</value>
+    <value>{0} Nucleos</value>
   </data>
   <data name="Dashboard.SystemInfo.Storage.DiskInfo" xml:space="preserve">
-    <value>{0} GB used of {1} GB ({2} GB free)</value>
+    <value>{0} GB usadas de {1} GB ({2} GB libres)</value>
   </data>
   <data name="Dashboard.SystemInfo.Ram.Modules" xml:space="preserve">
-    <value>{0} Module(s)</value>
+    <value>{0} Modulo(s)</value>
   </data>
   <data name="Dashboard.SystemInfo.Cpu.Threads" xml:space="preserve">
-    <value>{0} Threads</value>
+    <value>{0} Hilos</value>
   </data>
   <data name="Dashboard.SystemInfo.Storage.System" xml:space="preserve">
-    <value>SYSTEM</value>
+    <value>SISTEMA</value>
   </data>
   <data name="Dashboard.SystemInfo.Storage.Header" xml:space="preserve">
-    <value>Storage</value>
+    <value>Almacenamiento</value>
   </data>
   <data name="Dashboard.SystemInfo.Ram.Used" xml:space="preserve">
-    <value>{0} GB Used</value>
+    <value>{0} GB Utilizados</value>
   </data>
   <data name="Dashboard.SystemInfo.Ram.Available" xml:space="preserve">
-    <value>{0} GB Available</value>
+    <value>{0} GB Disponibles</value>
   </data>
   <data name="Dashboard.SystemInfo.Loading" xml:space="preserve">
-    <value>Fetching System Information...</value>
+    <value>Obteniendo información del sistema...</value>
   </data>
   <data name="Sidebar.Optimize" xml:space="preserve">
-    <value>Optimize</value>
+    <value>Optimizar</value>
   </data>
   <data name="Customize.Description" xml:space="preserve">
-    <value>Customize Windows settings and preferences</value>
+    <value>Personaliza la configuración y preferencias de Window</value>
   </data>
   <data name="Customize.Preferences.Name" xml:space="preserve">
-    <value>Preferences</value>
+    <value>Preferencias</value>
   </data>
   <data name="Customize.Preferences.Description" xml:space="preserve">
-    <value>Customize visual and interaction settings</value>
+    <value>Personaliza la configuración visual y de interacción</value>
   </data>
   <data name="Customize.Gaming.Name" xml:space="preserve">
-    <value>Gaming</value>
+    <value>Juegos</value>
   </data>
   <data name="Customize.Gaming.Description" xml:space="preserve">
-    <value>Game-related display, input, and recording settings</value>
+    <value>Configuración relacionada con pantalla, entrada y grabación de juegos</value>
   </data>
   <data name="Dashboard.SystemInfo.Gpu.More" xml:space="preserve">
-    <value>+ {0} more GPU</value>
+    <value>+ {0} más GPU</value>
   </data>
   <data name="Dashboard.Actions.Discord.Title" xml:space="preserve">
-    <value>Discord Community</value>
+    <value>Comunidad de Discord</value>
   </data>
   <data name="Dashboard.Actions.Discord.Description" xml:space="preserve">
-    <value>Join my Discord community to... get support or play games with me</value>
+    <value>Únete a mi comunidad de Discord para... obtener soporte o jugar conmigo</value>
   </data>
   <data name="Dashboard.Actions.GitHub.Title" xml:space="preserve">
-    <value>GitHub Repository</value>
+    <value>Repositorio de Github</value>
   </data>
   <data name="Dashboard.Actions.GitHub.Description" xml:space="preserve">
-    <value>Explore, review, and contribute to my project through GitHub</value>
+    <value>Explora, revisa, y constribuye a mi proyecto mediante Github</value>
   </data>
   <data name="Dashboard.Actions.SupportMe.Title" xml:space="preserve">
-    <value>Contribute</value>
+    <value>Contribuir</value>
   </data>
   <data name="Dashboard.Actions.SupportMe.Description" xml:space="preserve">
-    <value>Star the repo on GitHub, share it with friends, or donate every bit helps this project grow!</value>
+    <value>Apoya el proyecto en GitHub, compártelo con tus amigos o haz una donación. ¡Cada aporte ayuda a que este proyecto siga creciendo!</value>
   </data>
   <data name="Service.Registry.Description.CreateKey" xml:space="preserve">
-    <value>Create registry key {0}</value>
+    <value>Crear clave del registro {0}</value>
   </data>
   <data name="Service.Registry.Description.DeleteKey" xml:space="preserve">
-    <value>Delete registry key {0}</value>
+    <value>Eliminar clave del registro {0}</value>
   </data>
   <data name="Settings.LanguageChanged.Title" xml:space="preserve">
-    <value>Language change</value>
+    <value>Cambiar idioma</value>
   </data>
   <data name="Settings.LanguageChanged.Description" xml:space="preserve">
-    <value>You need to restart the application to apply the new language.</value>
+    <value>Necesitas reiniciar la aplicación para aplicar el nuevo idioma.</value>
   </data>
   <data name="Button.Ok" xml:space="preserve">
-    <value>OK</value>
+    <value>Aceptar</value>
   </data>
   <data name="Settings.Header.Title" xml:space="preserve">
-    <value>Settings</value>
+    <value>Configuración</value>
   </data>
   <data name="Settings.Appearance.Header" xml:space="preserve">
-    <value>Appearance</value>
+    <value>Apariencia</value>
   </data>
   <data name="Settings.Appearance.LanguageSelector.Title" xml:space="preserve">
-    <value>Language</value>
+    <value>Idioma</value>
   </data>
   <data name="Settings.Appearance.LanguageSelector.Description" xml:space="preserve">
-    <value>Choose your preferred language.</value>
+    <value>Elije tu idioma preferido.</value>
   </data>
   <data name="Settings.Appearance.ThemeSelector.Title" xml:space="preserve">
-    <value>Theme</value>
+    <value>Tema</value>
   </data>
   <data name="Settings.Appearance.ThemeSelector.Description" xml:space="preserve">
-    <value>Select your preferred theme for the app.</value>
+    <value>Selecciona tu tema preferido para la aplicación.</value>
   </data>
   <data name="Settings.Appearance.ThemeSelector.Light" xml:space="preserve">
-    <value>Light</value>
+    <value>Claro</value>
   </data>
   <data name="Settings.Appearance.ThemeSelector.Dark" xml:space="preserve">
-    <value>Dark</value>
+    <value>Oscuro</value>
   </data>
   <data name="Settings.Appearance.ThemeSelector.HighContrast" xml:space="preserve">
-    <value>High Contrast</value>
+    <value>Alto constracte</value>
   </data>
   <data name="Common.AppliedSecondsAgo" xml:space="preserve">
-    <value>Applied on {0} seconds ago</value>
+    <value>Aplicado en {0} hace segundos</value>
   </data>
   <data name="Common.AppliedMinutesAgo" xml:space="preserve">
-    <value>Applied on {0} minutes ago</value>
+    <value>Aplicado en {0} hace minutos</value>
   </data>
   <data name="Common.AppliedHoursAgo" xml:space="preserve">
-    <value>Applied on {0} hours ago</value>
+    <value>Aplicado en {0} hace horas</value>
   </data>
   <data name="Common.AppliedDaysAgo" xml:space="preserve">
-    <value>Applied on {0} days ago</value>
+    <value>Aplicado en {0} hace dias</value>
   </data>
   <data name="Common.AppliedMonthsAgo" xml:space="preserve">
-    <value>Applied on {0} months ago</value>
+    <value>Aplicado en {0} hace meses</value>
   </data>
   <data name="Common.AppliedYearsAgo" xml:space="preserve">
-    <value>Applied on {0} years ago</value>
+    <value>Aplicado en {0} hace años</value>
   </data>
   <data name="Optimizer.UI.Risk.Safe" xml:space="preserve">
-    <value>Safe</value>
+    <value>Seguro</value>
   </data>
   <data name="Optimizer.UI.Risk.Moderate" xml:space="preserve">
-    <value>Caution</value>
+    <value>Precaución</value>
   </data>
   <data name="Optimizer.UI.Risk.Risky" xml:space="preserve">
-    <value>Expert</value>
+    <value>Experto</value>
   </data>
   <data name="OptimizationDetailsDialog.DetailedDescription" xml:space="preserve">
-    <value>Detailed description</value>
+    <value>Descripción detallada</value>
   </data>
   <data name="OptimizationDetailsDialog.Tags" xml:space="preserve">
-    <value>Tags</value>
+    <value>Etiquetas</value>
   </data>
   <data name="Optimizer.Performance.SvcHostSplit.ShortDescription" xml:space="preserve">
-    <value>Sets the Service Host split threshold to match total system RAM, forcing Windows to isolate services into separate processes for improved stability.</value>
+    <value>Establece el umbral de división del Host de servicio para que coincida con la RAM total del sistema, obligando a Windows a aislar los servicios en procesos separados para mejorar la estabilidad.</value>
   </data>
   <data name="Optimizer.PowerManagement.InstallOptimizerDuckPowerPlan.Error.DetectActivePlanFailed" xml:space="preserve">
-    <value>Failed to detect the current active power plan.</value>
+    <value>No se pudo detectar el plan de energia activo.</value>
   </data>
   <data name="Optimizer.PowerManagement.InstallOptimizerDuckPowerPlan.Error.ImportFailed" xml:space="preserve">
-    <value>Failed to import optimizerDuck's power plan.</value>
+    <value>No se pudo importar el plan de energia de optimizerduck.</value>
   </data>
   <data name="Optimizer.PowerManagement.InstallOptimizerDuckPowerPlan.Error.ActivateFailed" xml:space="preserve">
-    <value>Failed to activate optimizerDuck's power plan.</value>
+    <value>No se pudo activar el plan de energia de optimizerduck.</value>
   </data>
   <data name="Optimizer.UI.Risk.Help" xml:space="preserve">
-    <value>This value reflects the level of intervention and the safety of the optimization process. Please exercise caution and consider carefully before applying any optimization.</value>
+    <value>Nste valor refleja el nivel de intervención y la seguridad del proceso de optimización. Ten precaución y considera cuidadosamente antes de aplicar cualquier optimización.</value>
   </data>
   <data name="Optimizer.UI.Tags.System" xml:space="preserve">
-    <value>System</value>
+    <value>Sistema</value>
   </data>
   <data name="Optimizer.UI.Tags.Ram" xml:space="preserve">
-    <value>Ram</value>
+    <value>RAM</value>
   </data>
   <data name="Optimizer.UI.Tags.Disk" xml:space="preserve">
-    <value>Disk</value>
+    <value>Disco</value>
   </data>
   <data name="Optimizer.UI.Tags.NetworkRequired" xml:space="preserve">
-    <value>Network connection required</value>
+    <value>Se requeire una conexión de red</value>
   </data>
   <data name="Optimizer.UI.Tags.Network" xml:space="preserve">
-    <value>Network</value>
+    <value>Red</value>
   </data>
   <data name="Optimizer.UI.Tags.Privacy" xml:space="preserve">
-    <value>Privacy</value>
+    <value>Privacidad</value>
   </data>
   <data name="Optimizer.UI.Tags.Audio" xml:space="preserve">
     <value>Audio</value>
   </data>
   <data name="Optimizer.UI.Tags.Help" xml:space="preserve">
-    <value>These tags indicate which parts of the system the optimization will affect.</value>
+    <value>Estas etiquetas indican qué partes del sistema afectará la optimización.</value>
   </data>
   <data name="Optimizer.UI.Tags.Nvidia" xml:space="preserve">
     <value>NVIDIA</value>
@@ -323,433 +323,433 @@
     <value>Intel</value>
   </data>
   <data name="Optimizer.UI.Tags.Power" xml:space="preserve">
-    <value>Power</value>
+    <value>Energia</value>
   </data>
   <data name="Revert.Error.InvalidData" xml:space="preserve">
-    <value>Invalid revert data for {0}: {1}</value>
+    <value>Datos de reversión no válidas para {0}: {1}</value>
   </data>
   <data name="Revert.Error.NoDataFound" xml:space="preserve">
-    <value>No revert data found for {0}.</value>
+    <value>No se encontraron datos de reversión para {0}.</value>
   </data>
   <data name="Optimization.Revert.Reverting" xml:space="preserve">
-    <value>Reverting...</value>
+    <value>Revirtiendo...</value>
   </data>
   <data name="Optimization.Revert.Success" xml:space="preserve">
-    <value>Successfully reverted {0}!</value>
+    <value>Reversion exitosa {0}!</value>
   </data>
   <data name="Optimization.Revert.Error.FailedWithSteps" xml:space="preserve">
-    <value>Reverted {0} with {1} failed step(s).</value>
+    <value>Se revirtieron {0} con {1} paso(s) fallido(s).</value>
   </data>
   <data name="Revert.Error.RevertFailed" xml:space="preserve">
-    <value>Failed to revert {0}: {1}</value>
+    <value>No se pudo revertir {0}: {1}</value>
   </data>
   <data name="Optimization.Revert.ExecutingStep" xml:space="preserve">
-    <value>Executing revert step: {0}/{1} ({2})</value>
+    <value>Ejecuntado paso de reversión: {0}/{1} ({2})</value>
   </data>
   <data name="Optimization.Revert.StepDescription" xml:space="preserve">
-    <value>Revert step #{0}</value>
+    <value>Pasos de reversión #{0}</value>
   </data>
   <data name="Revert.Registry.Description.RestoreKey" xml:space="preserve">
-    <value>Restore registry key: {0}</value>
+    <value>Restaurar clave dee registro: {0}</value>
   </data>
   <data name="Revert.Registry.Description.DeleteKey" xml:space="preserve">
-    <value>Delete registry key: {0}</value>
+    <value>Eliminar clave dee registro: {0}</value>
   </data>
   <data name="Revert.Registry.Description.RevertUnknown" xml:space="preserve">
-    <value>Revert registry: {0}</value>
+    <value>Revertir registro: {0}</value>
   </data>
   <data name="Revert.Error.FileNotFound" xml:space="preserve">
-    <value>Revert file not found</value>
+    <value>No se encontro el archivo de reversión</value>
   </data>
   <data name="Revert.Error.FileEmpty" xml:space="preserve">
-    <value>Revert file is empty</value>
+    <value>El archivo de reversión está vacio</value>
   </data>
   <data name="Revert.Error.ReadFailed" xml:space="preserve">
-    <value>Failed to read revert data: {0}</value>
+    <value>No se pudieron leer los datos de reversión: {0}</value>
   </data>
   <data name="Revert.Error.InvalidJson" xml:space="preserve">
-    <value>Invalid revert data</value>
+    <value>Datos de reversión no válidos</value>
   </data>
   <data name="Revert.Error.InvalidJsonFormat" xml:space="preserve">
-    <value>Invalid JSON format: {0}</value>
+    <value>Formato de JSON no válido: {0}</value>
   </data>
   <data name="Revert.Error.NoSteps" xml:space="preserve">
-    <value>No revert steps found.</value>
+    <value>No se encontraron pasos de reversión.</value>
   </data>
   <data name="Revert.Error.InvalidSteps" xml:space="preserve">
-    <value>Invalid revert steps: {0}</value>
+    <value>Pasos de reversión no válidos: {0}</value>
   </data>
   <data name="Revert.Error.StepFailed" xml:space="preserve">
-    <value>Revert step failed</value>
+    <value>El paso de reversión fallo</value>
   </data>
   <data name="Revert.UsbPower.Description" xml:space="preserve">
-    <value>Restore USB selective suspend power states</value>
+    <value>Restaurar estados de energia de suspención selectiva de USB </value>
   </data>
   <data name="Service.Registry.Error.BackupTruncated" xml:space="preserve">
-    <value>Registry subtree is too large to back up safely; delete aborted for {0}</value>
+    <value>La subclave del registro es demasiado grande para crear una copia de seguridad segura; eliminación cancelada para {0}</value>
   </data>
   <data name="Revert.Error.OptimizationIdMismatch" xml:space="preserve">
-    <value>OptimizationId mismatch.</value>
+    <value>El identificador de optimización no coincide.</value>
   </data>
   <data name="Optimization.Apply.Processing" xml:space="preserve">
-    <value>Applying changes...</value>
+    <value>Aplicando canbios...</value>
   </data>
   <data name="Optimization.Apply.Completed" xml:space="preserve">
-    <value>Completed</value>
+    <value>Completado</value>
   </data>
   <data name="Optimization.Apply.Success" xml:space="preserve">
-    <value>Successfully applied {0}.</value>
+    <value>Aplicado correctamente {0}.</value>
   </data>
   <data name="Optimization.Apply.Error.FailedWithSteps" xml:space="preserve">
-    <value>Applied {0} with {1} failed step(s).</value>
+    <value>Aplicado {0} con {1} paso(s) fallido(s).</value>
   </data>
   <data name="Optimization.Apply.Error.Failed" xml:space="preserve">
-    <value>Failed to apply {0}.</value>
+    <value>No se pudo aplicar {0}.</value>
   </data>
   <data name="Optimization.Apply.Error.Unknown" xml:space="preserve">
-    <value>Unknown result for {0}.</value>
+    <value>Resultado desconocido para {0}.</value>
   </data>
   <data name="Service.Common.Error.AccessDenied" xml:space="preserve">
-    <value>Access denied</value>
+    <value>Acceso denegado</value>
   </data>
   <data name="Service.Registry.Error.AccessDeniedProtectedHive" xml:space="preserve">
-    <value>Access denied (protected hive)</value>
+    <value>Acceso denegado (Sección protegida del registro)</value>
   </data>
   <data name="Service.Registry.Error.UnauthorizedAccess" xml:space="preserve">
-    <value>Unauthorized access</value>
+    <value>Acceso no autorizado</value>
   </data>
   <data name="Service.Registry.Error.CreateOrOpenSubkeyFailed" xml:space="preserve">
-    <value>Failed to create/open subkey</value>
+    <value>No se pudo crear/abrir la subclave</value>
   </data>
   <data name="Service.Registry.ErrorDetail.AccessDeniedWrite" xml:space="preserve">
-    <value>Access denied writing {0}:{1}</value>
+    <value>Acceso denegado al escribir {0}:{1}</value>
   </data>
   <data name="Service.Registry.ErrorDetail.AccessDeniedDelete" xml:space="preserve">
-    <value>Access denied deleting {0}:{1}</value>
+    <value>Acceso denegado al eliminar {0}:{1}</value>
   </data>
   <data name="Service.Registry.ErrorDetail.AccessDeniedCreateKey" xml:space="preserve">
-    <value>Access denied creating {0}</value>
+    <value>Acceso denegado al crear {0}</value>
   </data>
   <data name="Service.Registry.ErrorDetail.AccessDeniedDeleteKeyTree" xml:space="preserve">
-    <value>Access denied deleting key tree {0}</value>
+    <value>Acceso denegado al eliminar el árbol de claves {0}</value>
   </data>
   <data name="Service.Service.Error.NotFound" xml:space="preserve">
-    <value>Service not found</value>
+    <value>Servicio no encontrado</value>
   </data>
   <data name="Service.Service.Info.SkippedNotFound" xml:space="preserve">
-    <value>Service '{0}' not found (skipped)</value>
+    <value>Servicio '{0}' no encontrado (omitido)</value>
   </data>
   <data name="Service.Service.Error.ChangeStartupTypeFailed" xml:space="preserve">
-    <value>Failed to change startup type for service</value>
+    <value>No se pudo aplicar el tipo de inicio de servicio</value>
   </data>
   <data name="Service.Service.Error.ChangeStartModeFailedWithCode" xml:space="preserve">
-    <value>ChangeStartMode failed (code: {0})</value>
+    <value>Error al cambiar el modo de inicio (codigo: {0})</value>
   </data>
   <data name="Service.Service.Error.ExceptionOccurred" xml:space="preserve">
-    <value>Failed to change service '{0}': {1}</value>
+    <value>No se pudo cambiar el modo de inicio '{0}': {1}</value>
   </data>
   <data name="Service.Shell.Error.ExitCode" xml:space="preserve">
-    <value>Exit code {0}</value>
+    <value>Cogio de salida {0}</value>
   </data>
   <data name="Service.Shell.Error.TimedOut" xml:space="preserve">
-    <value>Timed out</value>
+    <value>Tiempo de espera agotado</value>
   </data>
   <data name="OptimizationDetailsDialog.Other.OpenRevertFile.Title" xml:space="preserve">
-    <value>Revert file</value>
+    <value>Archivo de reversión</value>
   </data>
   <data name="OptimizationResultDialog.Header" xml:space="preserve">
-    <value>{0} Failed steps</value>
+    <value>{0} Pasos fallidos</value>
   </data>
   <data name="OptimizationResultDialog.Description" xml:space="preserve">
-    <value>Some steps didn't complete successfully. You can retry only the failed steps.</value>
+    <value>Algunos pasos no se completaron correctamente. Puedes volver a intertar solo los pasos fallidos.</value>
   </data>
   <data name="OptimizationResultDialog.Details" xml:space="preserve">
-    <value>Details</value>
+    <value>Detalles</value>
   </data>
   <data name="Button.Retry" xml:space="preserve">
-    <value>Retry</value>
+    <value>Reintentar</value>
   </data>
   <data name="Settings.About.Duck.Description" xml:space="preserve">
-    <value>Current version: {0}</value>
+    <value>Version actual: {0}</value>
   </data>
   <data name="Settings.Advanced.Header" xml:space="preserve">
-    <value>Advanced</value>
+    <value>Avanzado</value>
   </data>
   <data name="Settings.Optimize.Header" xml:space="preserve">
-    <value>Optimize</value>
+    <value>Optimizar</value>
   </data>
   <data name="Settings.Optimize.ShellTimeout.Title" xml:space="preserve">
-    <value>Shell service timeout</value>
+    <value>Tiempo de espera de shell</value>
   </data>
   <data name="Settings.Optimize.ShellTimeout.Description" xml:space="preserve">
-    <value>Timeout for each shell command execution (milliseconds).</value>
+    <value>Tiempo de espera para la ejecución de cada comando de Shell (milisegundos).</value>
   </data>
   <data name="Settings.Advanced.ClearDownloads.Title" xml:space="preserve">
-    <value>Clear downloads</value>
+    <value>Limpiar descargas</value>
   </data>
   <data name="Settings.Advanced.ClearDownloads.Description" xml:space="preserve">
-    <value>Delete all files downloaded during the optimization process.</value>
+    <value>Eliminar todos los archivos descargados durante el proceso de optimización.</value>
   </data>
   <data name="Settings.Advanced.ClearRevertDatas.Title" xml:space="preserve">
-    <value>Clear all revert data</value>
+    <value>Limpiar todos los datos revertidos </value>
   </data>
   <data name="Settings.Advanced.ClearRevertDatas.Description" xml:space="preserve">
-    <value>Clear all rollback data from optimizations.</value>
+    <value>Eliminar todos los datos de reversión de las optimizaciones.</value>
   </data>
   <data name="Button.Clear" xml:space="preserve">
-    <value>Clear</value>
+    <value>Limpiar</value>
   </data>
   <data name="Settings.Advanced.OpenRootDir.Title" xml:space="preserve">
-    <value>Open root directory</value>
+    <value>Abrir directorio raiz</value>
   </data>
   <data name="Settings.Advanced.OpenRootDir.Description" xml:space="preserve">
-    <value>Open the application's root directory, where all necessary files are stored.</value>
+    <value>Abre el directorio raiz de la aplicación, donde se almacenan todos los archivos necesarios.</value>
   </data>
   <data name="Settings.Appearance.SmoothScrolling.Title" xml:space="preserve">
-    <value>Smooth Scrolling</value>
+    <value>Desplazamiento suave</value>
   </data>
   <data name="Settings.Appearance.SmoothScrolling.Description" xml:space="preserve">
-    <value>Enable smooth scrolling animation for a more fluid scrolling experience. Turn off if you experience lag.</value>
+    <value>Activa la animación de desplazamiento suave para una experiencia más fluida. Desactívalo si experimentas retrasos.</value>
   </data>
   <data name="Button.Open" xml:space="preserve">
-    <value>Open</value>
+    <value>Abrir</value>
   </data>
   <data name="Settings.About.Header" xml:space="preserve">
-    <value>About</value>
+    <value>Acerda de</value>
   </data>
   <data name="Dialog.AreYouSure.Title" xml:space="preserve">
-    <value>Do you really want to proceed?</value>
+    <value>¿Realmente deseas continuar?</value>
   </data>
   <data name="Settings.ClearDownloads.Description" xml:space="preserve">
-    <value>You are about to delete all files downloaded during the optimization process. Please note that this action is permanent and cannot be undone, so make sure you are certain before proceeding.</value>
+    <value>Estás a punto de eliminar todos los archivos descargados durante el proceso de optimización. Ten en cuenta que esta acción es permanente y no se puede deshacer, así que asegúrate antes de continuar.</value>
   </data>
   <data name="Button.Cancel" xml:space="preserve">
-    <value>Cancel</value>
+    <value>Cancelar</value>
   </data>
   <data name="Button.Skip" xml:space="preserve">
-    <value>Skip</value>
+    <value>Omitir</value>
   </data>
   <data name="Settings.ClearRevertData.Description" xml:space="preserve">
-    <value>You are about to delete all rollback data generated after the optimization process. This means you will no longer be able to restore the pre-optimization state, so please think carefully before confirming.</value>
+    <value>Estás a punto de eliminar todos los datos de reversión generados después del proceso de optimización. Esto significa que ya no podrás restaurar el estado anterior a la optimización, así que piénsalo bien antes de confirmar.</value>
   </data>
   <data name="ProcessingOptimizationDialog.Warning.DontCloseAppOrRestart" xml:space="preserve">
-    <value>Please don't close the app or restart while changes are being applied or reverted.</value>
+    <value>No cierres la aplicación ni reinicies mientras se aplican los cambios.</value>
   </data>
   <data name="Common.AppliedJustNow" xml:space="preserve">
-    <value>Just applied</value>
+    <value>Aplicado recientemente</value>
   </data>
   <data name="Optimization.Apply.Snackbar.Error.Title" xml:space="preserve">
-      <value>Couldn't fully apply optimization</value>
+      <value>No se pudo aplicar correctamente la optimización</value>
     </data>
   <data name="Optimization.Revert.Snackbar.Error.Title" xml:space="preserve">
-    <value>Couldn't revert optimization</value>
+    <value>No se pudo revertir la optimización</value>
   </data>
   <data name="Optimization.Apply.Snackbar.Success.Title" xml:space="preserve">
-    <value>Optimization applied successfully</value>
+    <value>optimización aplicada correctamente</value>
   </data>
   <data name="Optimization.Revert.Snackbar.Success.Title" xml:space="preserve">
-    <value>Optimization reverted successfully</value>
+    <value>optimización revertida correctamente</value>
   </data>
   <data name="Optimization.Toggle.Snackbar.Error.Title" xml:space="preserve">
-    <value>Couldn't toggle optimization</value>
+    <value>No se pudo cambiar la optimización</value>
   </data>
   <data name="Optimization.Toggle.Snackbar.Error.Message" xml:space="preserve">
-    <value>An error occurred: {0}</value>
+    <value>Ocurrió un error: {0}</value>
   </data>
   <data name="Optimization.Retry.Processing" xml:space="preserve">
-    <value>Retrying failed steps...</value>
+    <value>Reintentando pasos fallidos...</value>
   </data>
   <data name="Optimization.RetryStep.Processing" xml:space="preserve">
-    <value>Retrying {0} step ({1}/{2} steps)</value>
+    <value>Reintentando {0} paso ({1}/{2} pasos)</value>
   </data>
   <data name="Optimization.Revert.Error.Failed" xml:space="preserve">
-    <value>Failed to revert {0}.</value>
+    <value>No se pudo revertir {0}.</value>
   </data>
   <data name="Dashboard.Header.Menu.Refresh" xml:space="preserve">
-    <value>Refresh</value>
+    <value>Actualizar</value>
   </data>
   <data name="Dashboard.Header.Menu.RunTaskManager" xml:space="preserve">
-    <value>Task Manager</value>
+    <value>Administrador de tareas</value>
   </data>
   <data name="Common.Unknown" xml:space="preserve">
-    <value>Unknown</value>
+    <value>Desconocido</value>
   </data>
   <data name="Common.Recommendation.On" xml:space="preserve">
-    <value>Recommended</value>
+    <value>Recomendado</value>
   </data>
   <data name="Common.Recommendation.Off" xml:space="preserve">
-    <value>Not Recommended</value>
+    <value>No recomendado</value>
   </data>
   <data name="Common.Recommendation.Experimental" xml:space="preserve">
     <value>Experimental</value>
   </data>
   <data name="Common.Recommendation.Depends" xml:space="preserve">
-    <value>Depends</value>
+    <value>Depende</value>
   </data>
   <data name="Optimizer.UI.Tags.Security" xml:space="preserve">
-    <value>Security</value>
+    <value>Seguridad</value>
   </data>
   <data name="Optimizer.UI.Tags.Performance" xml:space="preserve">
-    <value>Performance</value>
+    <value>Rendimiento</value>
   </data>
   <data name="Optimizer.UI.Tags.Latency" xml:space="preserve">
-    <value>Latency</value>
+    <value>Latencia</value>
   </data>
   <data name="Optimizer.Performance" xml:space="preserve">
-    <value>Performance</value>
+    <value>Rendimiento</value>
   </data>
   <data name="Optimizer.PowerManagement" xml:space="preserve">
-    <value>Power Management</value>
+    <value>Administración de energia</value>
   </data>
   <data name="Optimizer.SecurityAndPrivacy" xml:space="preserve">
-    <value>Security &amp; Privacy</value>
+    <value>Seguridad &amp; Privacidad</value>
   </data>
   <data name="Optimizer.BloatwareAndServices" xml:space="preserve">
-    <value>Bloatware &amp; Services</value>
+    <value>Programas innecesarios &amp; Servicios</value>
   </data>
   <data name="Optimizer.Performance.DisableBackgroundApps.Name" xml:space="preserve">
-    <value>Disable Background Apps</value>
+    <value>Desactivar aplicaciones en segundo plano</value>
   </data>
   <data name="Optimizer.Performance.DisableBackgroundApps.ShortDescription" xml:space="preserve">
-    <value>Prevents inactive applications from running in the background to free up RAM and reduce CPU overhead.</value>
+    <value>Evita que las aplicaciones inactivas se ejecuten en segundo plano para liberar RAM y reducir el consumo de CPU.</value>
   </data>
   <data name="Optimizer.Performance.SvcHostSplit.Name" xml:space="preserve">
-    <value>Optimize Service Isolation</value>
+    <value>Optimizar aislamiento de servicios</value>
   </data>
   <data name="Optimizer.Performance.SvcHostSplit.Error.InvalidRAM" xml:space="preserve">
-    <value>Invalid RAM: {0}</value>
+    <value>RAM no válida: {0}</value>
   </data>
   <data name="Optimizer.Performance.ProcessPriority.Name" xml:space="preserve">
-    <value>Prioritize Active Applications</value>
+    <value>Priorizar aplicaciones activas</value>
   </data>
   <data name="Optimizer.Performance.ProcessPriority.ShortDescription" xml:space="preserve">
-    <value>Allocates more CPU resources to the application you are currently using for a faster, more responsive experience.</value>
+    <value>Asigna más recursos de CPU a la aplicación que estás usando actualmente para una experiencia más rápida y con mayor respuesta.</value>
   </data>
   <data name="Optimizer.Performance.OptimizeMultimediaScheduler.Name" xml:space="preserve">
-    <value>Optimize Multimedia Scheduler</value>
+    <value>Optimizar programador multimedia</value>
   </data>
   <data name="Optimizer.Performance.OptimizeMultimediaScheduler.ShortDescription" xml:space="preserve">
-    <value>Configures the Multimedia Class Scheduler Service (MMCSS) for gaming and low latency by prioritizing multimedia workloads and disabling network throttling.</value>
+    <value>Configura el Servicio del Programador de clases multimedia (MMCSS) para juegos y baja latencia, priorizando las tareas multimedia y desactivando la limitación de red.</value>
   </data>
   <data name="Optimizer.Performance.KeyboardLatencyOptimization.Name" xml:space="preserve">
-    <value>Optimize Keyboard Repeat</value>
+    <value>Optimizar repeticion del teclado</value>
   </data>
   <data name="Optimizer.Performance.KeyboardLatencyOptimization.ShortDescription" xml:space="preserve">
-    <value>Sets the fastest keyboard repeat delay and repeat rate for more responsive typing and repeated key presses.</value>
+    <value>Establece el menor retraso y la mayor velocidad de repetición del teclado para una escritura más rápida y una respuesta mejorada al mantener teclas presionadas.</value>
   </data>
   <data name="Optimizer.Performance.DisableAccessibilityKeyboardHotkeys.Name" xml:space="preserve">
-    <value>Disable Accessibility Keyboard Hotkeys</value>
+    <value>Desactivar accesos rápidos de accesibilidad del teclado</value>
   </data>
   <data name="Optimizer.Performance.DisableAccessibilityKeyboardHotkeys.ShortDescription" xml:space="preserve">
-    <value>Disables Sticky Keys, Filter Keys, and Toggle Keys keyboard shortcuts to prevent accidental pop-ups during gaming and typing.</value>
+    <value>Desactiva las teclas especiales, teclas filtro y teclas de alternancia para evitar ventanas emergentes accidentales durante juegos y escritura.</value>
   </data>
   <data name="Optimizer.PowerManagement.DisableHibernateAndFastStartup.Name" xml:space="preserve">
-    <value>Disable Hibernation &amp; Fast Startup</value>
+    <value>Desactivar Hibernación e Inicio Rápido</value>
   </data>
   <data name="Optimizer.PowerManagement.DisableHibernateAndFastStartup.ShortDescription" xml:space="preserve">
-    <value>Turns off hibernation and Fast Startup to reclaim disk space and ensure a full shutdown for cleaner hardware initialization on boot.</value>
+    <value>Desactiva la hibernación y el Inicio Rápido para liberar espacio en disco y asegurar un apagado completo, logrando una inicialización más limpia del hardware al arrancar.</value>
   </data>
   <data name="Optimizer.PowerManagement.DisableUSBPowerSaving.Name" xml:space="preserve">
-    <value>Disable USB Power Saving</value>
+    <value>Desactivar Ahorro de Energía USB</value>
   </data>
   <data name="Optimizer.PowerManagement.DisableUSBPowerSaving.ShortDescription" xml:space="preserve">
-    <value>Prevents Windows from powering down USB ports, eliminating wake-up delays for mice, keyboards, and other peripherals.</value>
+    <value>Evita que Windows apague los puertos USB, eliminando los retrasos de encendido para ratones, teclados y otros periféricos.</value>
   </data>
   <data name="Optimizer.PowerManagement.InstallOptimizerDuckPowerPlan.Name" xml:space="preserve">
-    <value>Apply Optimized Power Plan</value>
+    <value>Aplicar Plan de Energía Optimizado</value>
   </data>
   <data name="Optimizer.PowerManagement.InstallOptimizerDuckPowerPlan.ShortDescription" xml:space="preserve">
-    <value>Installs a custom performance-focused power plan to ensure your system always runs at maximum speed. Warning: May cause Task Manager to incorrectly show 100% CPU usage on some systems, actual CPU load is unaffected.</value>
+    <value>Instala un plan de energía personalizado centrado en el rendimiento para asegurar que el sistema funcione siempre a máxima velocidad. Advertencia: Puede provocar que el Administrador de tareas muestre incorrectamente un 100% de uso de CPU en algunos sistemas, la carga real de CPU no se ve afectada.</value>
   </data>
   <data name="Optimizer.PowerManagement.InstallOptimizerDuckPowerPlan.Progress.Importing" xml:space="preserve">
-    <value>Importing and activating power plan...</value>
+    <value>Importando y activando el plan de energía...</value>
   </data>
   <data name="Optimizer.PowerManagement.DisablePowerSaving.Name" xml:space="preserve">
-    <value>Disable System Power Throttling</value>
+    <value>Desactivar Limitación de Energía del Sistema</value>
   </data>
   <data name="Optimizer.PowerManagement.DisablePowerSaving.ShortDescription" xml:space="preserve">
-    <value>Prevents Windows from limiting CPU performance (Power Throttling) to maintain peak power for active tasks.</value>
+    <value>Evita que Windows limite el rendimiento de la CPU (Power Throttling) para mantener la máxima potencia en las tareas activas.</value>
   </data>
   <data name="Optimizer.SecurityAndPrivacy.DisableTelemetry.Name" xml:space="preserve">
-    <value>Disable Data Collection (Telemetry)</value>
+    <value>Desactivar Recopilación de Datos (Telemetría)</value>
   </data>
   <data name="Optimizer.SecurityAndPrivacy.DisableTelemetry.ShortDescription" xml:space="preserve">
-    <value>Disables Windows telemetry and usage tracking services to enhance your personal privacy and reduce background activity.</value>
+    <value>Desactiva los servicios de telemetría y rastreo de uso de Windows para mejorar tu privacidad y reducir la actividad en segundo plano.</value>
   </data>
   <data name="Optimizer.SecurityAndPrivacy.DisableTelemetry.Progress.EditRegistry" xml:space="preserve">
-    <value>Applying policy and registry changes...</value>
+    <value>Aplicando políticas y cambios en el registro...</value>
   </data>
   <data name="Optimizer.SecurityAndPrivacy.DisableTelemetry.Progress.DisableServices" xml:space="preserve">
-    <value>Disabling telemetry services...</value>
+    <value>Desactivando servicios de telemetría...</value>
   </data>
   <data name="Optimizer.SecurityAndPrivacy.DisableTelemetry.Progress.DisableTasks" xml:space="preserve">
-    <value>Disabling scheduled telemetry tasks...</value>
+    <value>Desactivando tareas programadas de telemetría...</value>
   </data>
   <data name="Optimizer.SecurityAndPrivacy.DisableErrorReporting.Name" xml:space="preserve">
-    <value>Disable Error Reporting</value>
+    <value>Desactivar Informe de Errores</value>
   </data>
   <data name="Optimizer.SecurityAndPrivacy.DisableErrorReporting.ShortDescription" xml:space="preserve">
-    <value>Disables Windows Error Reporting and Program Compatibility Assistant services.</value>
+    <value>Desactiva los servicios de Informe de Errores de Windows y el Asistente de Compatibilidad de Programas.</value>
   </data>
   <data name="Optimizer.SecurityAndPrivacy.DisableAdvertisingAndSuggestions.Name" xml:space="preserve">
-    <value>Disable Ads and Suggestions</value>
+    <value>Desactivar Anuncios y Sugerencias</value>
   </data>
   <data name="Optimizer.SecurityAndPrivacy.DisableAdvertisingAndSuggestions.ShortDescription" xml:space="preserve">
-    <value>Disables personalized ads, Windows consumer features, and system suggestions.</value>
+    <value>Desactiva los anuncios personalizados, funciones para consumidores y sugerencias del sistema.</value>
   </data>
   <data name="Optimizer.SecurityAndPrivacy.DisableActivityHistory.Name" xml:space="preserve">
-    <value>Disable Activity History</value>
+    <value>Desactivar Historial de Actividad</value>
   </data>
   <data name="Optimizer.SecurityAndPrivacy.DisableActivityHistory.ShortDescription" xml:space="preserve">
-    <value>Prevents Windows from collecting and syncing your activity history.</value>
+    <value>Evita que Windows recopile y sincronice tu historial de actividad.</value>
   </data>
   <data name="Optimizer.SecurityAndPrivacy.DisableLocationAndSensors.Name" xml:space="preserve">
-    <value>Disable Location and Sensors</value>
+    <value>Desactivar Ubicación y Sensores</value>
   </data>
   <data name="Optimizer.SecurityAndPrivacy.DisableLocationAndSensors.ShortDescription" xml:space="preserve">
-    <value>Disables location tracking, system sensors, and offline maps updates.</value>
+    <value>Desactiva el rastreo de ubicación, los sensores del sistema y las actualizaciones de mapas sin conexión.</value>
   </data>
   <data name="Optimizer.SecurityAndPrivacy.DisableAutoLogger.Name" xml:space="preserve">
-    <value>Disable Background Logging</value>
+    <value>Desactivar Registros en Segundo Plano</value>
   </data>
   <data name="Optimizer.SecurityAndPrivacy.DisableAutoLogger.ShortDescription" xml:space="preserve">
-    <value>Stops non-essential system event logging to reduce continuous disk activity and save CPU cycles.</value>
+    <value>Detiene el registro de eventos del sistema no esenciales para reducir la actividad continua en el disco y ahorrar ciclos de CPU.</value>
   </data>
   <data name="Optimizer.SecurityAndPrivacy.DisableCortana.Name" xml:space="preserve">
-    <value>Disable Cortana &amp; Web Search</value>
+    <value>Desactivar Cortana y Búsqueda Web</value>
   </data>
   <data name="Optimizer.SecurityAndPrivacy.DisableCortana.ShortDescription" xml:space="preserve">
-    <value>Turns off the Cortana voice assistant and removes Bing web results from the Windows Search bar.</value>
+    <value>Desactiva el asistente de voz Cortana y elimina los resultados web de Bing en la barra de búsqueda de Windows.</value>
   </data>
   <data name="Optimizer.SecurityAndPrivacy.DisableCopilot.Name" xml:space="preserve">
-    <value>Disable Windows Copilot</value>
+    <value>Desactivar Windows Copilot</value>
   </data>
   <data name="Optimizer.SecurityAndPrivacy.DisableCopilot.ShortDescription" xml:space="preserve">
-    <value>Removes the AI Copilot assistant from the taskbar and system shell to free up memory and screen space.</value>
+    <value>Elimina el asistente de IA Copilot de la barra de tareas y el sistema para liberar memoria y espacio en pantalla.</value>
   </data>
   <data name="Optimizer.SecurityAndPrivacy.DisableContentDeliveryManager.Name" xml:space="preserve">
-    <value>Disable Cloud Content Delivery</value>
+    <value>Desactivar Entrega de Contenido en la Nube</value>
   </data>
   <data name="Optimizer.SecurityAndPrivacy.DisableContentDeliveryManager.ShortDescription" xml:space="preserve">
-    <value>Turns off Windows cloud-delivered content, including system tips, spotlight suggestions, and automatic delivery of consumer features.</value>
+    <value>Desactiva el contenido distribuido por la nube de Windows, incluyendo consejos del sistema, sugerencias y descargas automáticas.</value>
   </data>
   <data name="Optimizer.BloatwareAndServices.DisablePreinstalledApps.Name" xml:space="preserve">
-    <value>Block Preinstalled Bloatware</value>
+    <value>Bloquear Bloatware Preinstalado</value>
   </data>
   <data name="Optimizer.BloatwareAndServices.DisablePreinstalledApps.ShortDescription" xml:space="preserve">
-    <value>Prevents Windows from automatically re-installing unwanted third-party apps and promoted software.</value>
+    <value>Evita que Windows vuelva a instalar automáticamente aplicaciones no deseadas y software promocionado.</value>
   </data>
   <data name="Optimizer.BloatwareAndServices.ConfigureServices.Name" xml:space="preserve">
-    <value>Optimize System Services</value>
+    <value>Optimizar Servicios del Sistema</value>
   </data>
   <data name="Optimizer.BloatwareAndServices.ConfigureServices.ShortDescription" xml:space="preserve">
-    <value>Adjusts non-essential background services to free up resources while maintaining all necessary Windows functionality.</value>
+    <value>Ajusta los servicios en segundo plano no esenciales para liberar recursos, manteniendo la funcionalidad de Windows intacta.</value>
   </data>
   <data name="Optimizer.BloatwareAndServices.ConfigureServices.Progress.ChangeServiceStartupType" xml:space="preserve">
-    <value>Setting startup type for {0} to {1}...</value>
+    <value>Configurando tipo de inicio de {0} a {1}...</value>
   </data>
   <data name="Optimizer.UI.Tags.Display" xml:space="preserve">
-    <value>Display</value>
+    <value>Pantalla</value>
   </data>
   <data name="Optimizer.UI.Tags.Visual" xml:space="preserve">
     <value>Visual</value>
@@ -758,1049 +758,1049 @@
     <value>GPU</value>
   </data>
   <data name="Optimizer.UserExperience" xml:space="preserve">
-    <value>User Experience</value>
+    <value>Experiencia de Usuario</value>
   </data>
   <data name="Optimizer.UserExperience.SpeedUpExplorerAndMenus.Name" xml:space="preserve">
-    <value>Speed Up Explorer &amp; Menus</value>
+    <value>Acelerar Explorador y Menús</value>
   </data>
   <data name="Optimizer.UserExperience.SpeedUpExplorerAndMenus.ShortDescription" xml:space="preserve">
-    <value>Sets StartupDelayInMSec=0, MenuShowDelay=0 to eliminate Explorer startup delay and reduce menu hover delay to minimum.</value>
+    <value>Establece los retrasos de inicio y de menú en 0 para eliminar los tiempos de espera del Explorador y reducir la latencia de los menús al mínimo.</value>
   </data>
   <data name="Optimizer.UserExperience.DisableVisualEffects.Name" xml:space="preserve">
-    <value>Disable Visual Effects</value>
+    <value>Desactivar Efectos Visuales</value>
   </data>
   <data name="Optimizer.UserExperience.DisableVisualEffects.ShortDescription" xml:space="preserve">
-    <value>Disables taskbar animations, listview shadows, window transparency, and Aero Peek to free up GPU/CPU resources for better performance.</value>
+    <value>Desactiva las animaciones de la barra de tareas, sombras de listas y transparencia para liberar recursos de CPU/GPU.</value>
   </data>
   <data name="Optimizer.Gpu.AmdDisableUlps.Name" xml:space="preserve">
-    <value>Disable AMD ULPS</value>
+    <value>Desactivar AMD ULPS</value>
   </data>
   <data name="Optimizer.Gpu.AmdDisableUlps.ShortDescription" xml:space="preserve">
-    <value>Sets EnableULPS=0 in AMD GPU registry to prevent Ultra Low Power State wake-up delays and multi-monitor issues. Reduces power saving on idle.</value>
+    <value>Evita los retrasos al despertar del Estado de Ultra Bajo Consumo (ULPS) y problemas con múltiples monitores. Reduce el ahorro de energía en inactividad.</value>
   </data>
   <data name="Optimizer.Gpu.AmdDisablePowerGating.Name" xml:space="preserve">
-    <value>Disable AMD Power Gating</value>
+    <value>Desactivar Control de Energía AMD</value>
   </data>
   <data name="Optimizer.Gpu.AmdDisablePowerGating.ShortDescription" xml:space="preserve">
-    <value>Sets DisablePowerGating=1, PP_GPUPowerDownEnabled=0, DisableDynamicPstate=1 to prevent AMD GPU power state transitions. Maintains consistent clocks at cost of higher idle power.</value>
+    <value>Evita las transiciones de estado de energía en la GPU AMD, manteniendo frecuencias consistentes a costa de un mayor consumo.</value>
   </data>
   <data name="Optimizer.Gpu.AmdDisableVideoClockGating.Name" xml:space="preserve">
-    <value>Disable AMD Video Clock Gating</value>
+    <value>Desactivar Control de Reloj de Video AMD</value>
   </data>
   <data name="Optimizer.Gpu.AmdDisableVideoClockGating.ShortDescription" xml:space="preserve">
-    <value>Sets DisableVCEPowerGating=1, DisableVceClockGating=1, EnableUvdClockGating=0 for AMD video engines (VCE/UVD) to improve encode/decode stability. Increases video playback power.</value>
+    <value>Desactiva el control de energía de los motores de video AMD (VCE/UVD) para mejorar la estabilidad de codificación/decodificación.</value>
   </data>
   <data name="Optimizer.Gpu.AmdDisableAspm.Name" xml:space="preserve">
-    <value>Disable AMD ASPM</value>
+    <value>Desactivar ASPM AMD</value>
   </data>
   <data name="Optimizer.Gpu.AmdDisableAspm.ShortDescription" xml:space="preserve">
-    <value>Sets EnableAspmL0s=0, EnableAspmL1=0 to disable Active State Power Management on AMD GPUs, reducing PCIe bus latency. Increases slot power consumption.</value>
+    <value>Desactiva el Active State Power Management (ASPM) en GPUs AMD, reduciendo la latencia del bus PCIe.</value>
   </data>
   <data name="Optimizer.Gpu.NvidiaDisableDynamicPstate.Name" xml:space="preserve">
-    <value>Disable NVIDIA Dynamic P-State</value>
+    <value>Desactivar P-State Dinámico NVIDIA</value>
   </data>
   <data name="Optimizer.Gpu.NvidiaDisableDynamicPstate.ShortDescription" xml:space="preserve">
-    <value>Sets DisableDynamicPstate=1 to lock NVIDIA GPU into fixed performance state, preventing clock speed fluctuations. Increases idle power draw.</value>
+    <value>Bloquea la GPU NVIDIA en un estado de rendimiento fijo, evitando fluctuaciones de frecuencia. Aumenta el consumo inactivo.</value>
   </data>
   <data name="Optimizer.Gpu.NvidiaDisableAsyncPstates.Name" xml:space="preserve">
-    <value>Disable NVIDIA Async P-States</value>
+    <value>Desactivar P-States Asíncronos NVIDIA</value>
   </data>
   <data name="Optimizer.Gpu.NvidiaDisableAsyncPstates.ShortDescription" xml:space="preserve">
-    <value>Sets DisableASyncPstates=1 to prevent NVIDIA asynchronous power state switching, providing deterministic performance for VR/real-time apps.</value>
+    <value>Previene el cambio asíncrono de estado de energía, proporcionando un rendimiento determinista en aplicaciones en tiempo real y RV.</value>
   </data>
   <data name="Optimizer.Gpu.IntelDisableAsyncFlips.Name" xml:space="preserve">
-    <value>Disable Intel Async Flips</value>
+    <value>Desactivar Volteos Asíncronos Intel</value>
   </data>
   <data name="Optimizer.Gpu.IntelDisableAsyncFlips.ShortDescription" xml:space="preserve">
-    <value>Sets Display1_DisableAsyncFlips=1 to force synchronous buffer flips on Intel iGPU, reducing input-to-display latency and screen tearing.</value>
+    <value>Fuerza volteos de búfer síncronos en la iGPU de Intel, reduciendo el desgarro de pantalla (tearing) y la latencia.</value>
   </data>
   <data name="Optimizer.Gpu.IntelDisableAdaptiveVsync.Name" xml:space="preserve">
-    <value>Disable Intel Adaptive V-Sync</value>
+    <value>Desactivar V-Sync Adaptativo Intel</value>
   </data>
   <data name="Optimizer.Gpu.IntelDisableAdaptiveVsync.ShortDescription" xml:space="preserve">
-    <value>Sets AdaptiveVsyncEnable=0 to disable Intel's adaptive V-Sync that dynamically adjusts to frame rate, using fixed V-Sync instead for stable timing.</value>
+    <value>Desactiva el V-Sync adaptativo de Intel para usar V-Sync fijo, asegurando una tasa de fotogramas estable.</value>
   </data>
   <data name="Customize.Preferences.Section.Taskbar" xml:space="preserve">
-    <value>Taskbar</value>
+    <value>Barra de Tareas</value>
   </data>
   <data name="Customize.Preferences.Section.Appearance" xml:space="preserve">
-    <value>Appearance</value>
+    <value>Apariencia</value>
   </data>
   <data name="Customize.Preferences.Section.Explorer" xml:space="preserve">
-    <value>Explorer</value>
+    <value>Explorador</value>
   </data>
   <data name="Customize.Preferences.TaskbarNewsAndInterests.Name" xml:space="preserve">
-    <value>Taskbar News &amp; Interests</value>
+    <value>Noticias e Intereses</value>
   </data>
   <data name="Customize.Preferences.TaskbarNewsAndInterests.Description" xml:space="preserve">
-    <value>Controls the News and Interests widget on the taskbar and MSN feed background updates.</value>
+    <value>Controla el widget de Noticias e Intereses en la barra de tareas y el fondo de MSN.</value>
   </data>
   <data name="Customize.Preferences.TaskbarSearchBox.Name" xml:space="preserve">
-    <value>Taskbar Search Box</value>
+    <value>Caja de Búsqueda</value>
   </data>
   <data name="Customize.Preferences.TaskbarSearchBox.Description" xml:space="preserve">
-    <value>Controls visibility of the search box on the taskbar.</value>
+    <value>Controla la visibilidad de la caja de búsqueda en la barra de tareas.</value>
   </data>
   <data name="Customize.Preferences.TaskbarChatButton.Name" xml:space="preserve">
-    <value>Taskbar Chat Button</value>
+    <value>Botón de Chat</value>
   </data>
   <data name="Customize.Preferences.TaskbarChatButton.Description" xml:space="preserve">
-    <value>Controls visibility of the Chat (Teams) button on the taskbar.</value>
+    <value>Controla la visibilidad del botón de Chat (Teams) en la barra de tareas.</value>
   </data>
   <data name="Customize.Preferences.TaskbarWidgets.Name" xml:space="preserve">
-    <value>Taskbar Widgets</value>
+    <value>Widgets</value>
   </data>
   <data name="Customize.Preferences.TaskbarWidgets.Description" xml:space="preserve">
-    <value>Controls visibility of the Widgets button on the taskbar.</value>
+    <value>Controla la visibilidad del botón de Widgets en la barra de tareas.</value>
   </data>
   <data name="Customize.Preferences.TaskbarWidgets.Recommendation.Reason" xml:space="preserve">
-    <value>Turning off widgets removes the background web service that fetches news and weather, reducing idle network and memory usage.</value>
+    <value>Desactivar los widgets elimina el servicio en segundo plano que obtiene noticias y clima, reduciendo el uso de red y memoria.</value>
   </data>
   <data name="Customize.Preferences.TaskbarAlignment.Name" xml:space="preserve">
-    <value>Taskbar Alignment</value>
+    <value>Alineación de la Barra de Tareas</value>
   </data>
   <data name="Customize.Preferences.TaskbarAlignment.Description" xml:space="preserve">
-    <value>Switches taskbar alignment between Center and Left.</value>
+    <value>Cambia la alineación de la barra de tareas entre Centro o Izquierda.</value>
   </data>
   <data name="Customize.Preferences.TaskbarAlignment.Options.Center" xml:space="preserve">
-    <value>Center</value>
+    <value>Centro</value>
   </data>
   <data name="Customize.Preferences.TaskbarAlignment.Options.Left" xml:space="preserve">
-    <value>Left</value>
+    <value>Izquierda</value>
   </data>
   <data name="Customize.Preferences.ExplorerCompactMode.Name" xml:space="preserve">
-    <value>Explorer Compact Mode</value>
+    <value>Modo Compacto</value>
   </data>
   <data name="Customize.Preferences.ExplorerCompactMode.Description" xml:space="preserve">
-    <value>Decreases spacing between items in File Explorer for a denser view.</value>
+    <value>Reduce el espacio entre los elementos en el Explorador de archivos para una vista más densa.</value>
   </data>
   <data name="Customize.Preferences.SnapAssistFlyout.Name" xml:space="preserve">
-    <value>Snap Layouts Flyout</value>
+    <value>Asistente de Ajuste (Snap)</value>
   </data>
   <data name="Customize.Preferences.SnapAssistFlyout.Description" xml:space="preserve">
-    <value>Controls the snap layouts menu that appears when hovering over the maximize button.</value>
+    <value>Controla el menú de ajuste que aparece al pasar el cursor sobre el botón de maximizar.</value>
   </data>
   <data name="Customize.Preferences.ExplorerItemCheckboxes.Name" xml:space="preserve">
-    <value>Explorer Item Check Boxes</value>
+    <value>Casillas de Verificación</value>
   </data>
   <data name="Customize.Preferences.ExplorerItemCheckboxes.Description" xml:space="preserve">
-    <value>Shows check boxes when selecting items in File Explorer.</value>
+    <value>Muestra casillas al seleccionar elementos en el Explorador de archivos.</value>
   </data>
   <data name="Customize.Preferences.TaskbarTaskViewButton.Name" xml:space="preserve">
-    <value>Taskbar Task View Button</value>
+    <value>Botón de Vista de Tareas</value>
   </data>
   <data name="Customize.Preferences.TaskbarTaskViewButton.Description" xml:space="preserve">
-    <value>Controls visibility of the Task View button on the taskbar.</value>
+    <value>Controla la visibilidad del botón Vista de Tareas en la barra de tareas.</value>
   </data>
   <data name="Customize.Preferences.MeetNow.Name" xml:space="preserve">
-    <value>Meet Now</value>
+    <value>Reunirse Ahora</value>
   </data>
   <data name="Customize.Preferences.MeetNow.Description" xml:space="preserve">
-    <value>Controls the Meet Now (Skype) icon in the taskbar notification area.</value>
+    <value>Controla el ícono de Reunirse Ahora (Skype) en el área de notificación.</value>
   </data>
   <data name="Customize.Preferences.TaskbarPeople.Name" xml:space="preserve">
-    <value>Taskbar People</value>
+    <value>Contactos</value>
   </data>
   <data name="Customize.Preferences.TaskbarPeople.Description" xml:space="preserve">
-    <value>Controls the People icon on the taskbar for quick contacts access.</value>
+    <value>Controla el ícono de Contactos en la barra de tareas para un acceso rápido.</value>
   </data>
   <data name="Customize.Preferences.TaskbarEndTask.Name" xml:space="preserve">
-    <value>Taskbar End Task</value>
+    <value>Finalizar Tarea</value>
   </data>
   <data name="Customize.Preferences.TaskbarEndTask.Description" xml:space="preserve">
-    <value>Adds an "End task" option to the taskbar right-click menu for quick process termination.</value>
+    <value>Añade una opción de "Finalizar tarea" al hacer clic derecho en la barra de tareas.</value>
   </data>
   <data name="Customize.Preferences.TaskbarEndTask.Recommendation.Reason" xml:space="preserve">
-    <value>End Task on the taskbar lets you kill frozen apps instantly without opening Task Manager.</value>
+    <value>Permite forzar el cierre de aplicaciones congeladas al instante sin abrir el Administrador de Tareas.</value>
   </data>
   <data name="Customize.Preferences.DarkMode.Name" xml:space="preserve">
-    <value>Dark Mode</value>
+    <value>Modo Oscuro</value>
   </data>
   <data name="Customize.Preferences.DarkMode.Description" xml:space="preserve">
-    <value>Dark mode for system apps, Settings, and shell elements.</value>
+    <value>Aplica el modo oscuro en las aplicaciones del sistema, Configuración y elementos visuales.</value>
   </data>
   <data name="Customize.Preferences.ExplorerSyncNotifications.Name" xml:space="preserve">
-    <value>Explorer Sync Notifications</value>
+    <value>Notificaciones de Sincronización</value>
   </data>
   <data name="Customize.Preferences.ExplorerSyncNotifications.Description" xml:space="preserve">
-    <value>Controls OneDrive and cloud sync provider notifications in File Explorer.</value>
+    <value>Controla las notificaciones de OneDrive y de sincronización en la nube en el Explorador.</value>
   </data>
   <data name="Customize.Preferences.ExplorerSyncNotifications.Recommendation.Reason" xml:space="preserve">
-    <value>Disabling sync notifications stops OneDrive pop-ups from interrupting file browsing in Explorer.</value>
+    <value>Desactivar las notificaciones evita interrupciones al navegar por tus archivos.</value>
   </data>
   <data name="Customize.Preferences.SystemSuggestions.Name" xml:space="preserve">
-    <value>System Suggestions</value>
+    <value>Sugerencias del Sistema</value>
   </data>
   <data name="Customize.Preferences.SystemSuggestions.Description" xml:space="preserve">
-    <value>Controls Windows tips and app suggestions in the Settings panel.</value>
+    <value>Controla los consejos y sugerencias de Windows en el panel de Configuración.</value>
   </data>
   <data name="Customize.Preferences.SystemSuggestions.Recommendation.Reason" xml:space="preserve">
-    <value>Turning off system suggestions stops Windows from recommending apps and settings you did not ask for.</value>
+    <value>Desactiva las recomendaciones de aplicaciones y configuraciones no solicitadas de Windows.</value>
   </data>
   <data name="Customize.Preferences.ToastNotifications.Name" xml:space="preserve">
-    <value>Toast Notifications</value>
+    <value>Notificaciones Emergentes</value>
   </data>
   <data name="Customize.Preferences.ToastNotifications.Description" xml:space="preserve">
-    <value>Controls toast popup notifications and lock screen notifications.</value>
+    <value>Controla las notificaciones emergentes (Toast) y en la pantalla de bloqueo.</value>
   </data>
   <data name="Customize.Preferences.ShowFileExtensions.Name" xml:space="preserve">
-    <value>Show File Extensions</value>
+    <value>Mostrar Extensiones de Archivos</value>
   </data>
   <data name="Customize.Preferences.ShowFileExtensions.Description" xml:space="preserve">
-    <value>Shows file extensions (e.g. .txt, .exe) in File Explorer.</value>
+    <value>Muestra las extensiones de archivos (ej. .txt, .exe) en el Explorador.</value>
   </data>
   <data name="Customize.Preferences.ShowFileExtensions.Recommendation.Reason" xml:space="preserve">
-    <value>Showing file extensions makes it easy to spot suspicious file types and prevents malware from hiding behind fake icons.</value>
+    <value>Mostrar las extensiones ayuda a identificar tipos de archivos y evita el malware que se oculta detrás de íconos falsos.</value>
   </data>
   <data name="Customize.Preferences.ShowHiddenFiles.Name" xml:space="preserve">
-    <value>Show Hidden Files</value>
+    <value>Mostrar Archivos Ocultos</value>
   </data>
   <data name="Customize.Preferences.ShowHiddenFiles.Description" xml:space="preserve">
-    <value>Shows hidden files and folders in File Explorer.</value>
+    <value>Muestra los archivos y carpetas ocultos en el Explorador.</value>
   </data>
   <data name="Customize.Preferences.ShowHiddenFiles.Recommendation.Reason" xml:space="preserve">
-    <value>Hidden files contain system and config data you may need to manage; showing them gives you full visibility of your system.</value>
+    <value>Los archivos ocultos contienen datos del sistema que podrías necesitar ver; mostrarlos te da control total.</value>
   </data>
   <data name="Customize.Preferences.ClipboardHistory.Name" xml:space="preserve">
-    <value>Clipboard History</value>
+    <value>Historial del Portapapeles</value>
   </data>
   <data name="Customize.Preferences.ClipboardHistory.Description" xml:space="preserve">
-    <value>Clipboard history for multiple copied items accessible with Win+V.</value>
+    <value>Historial de los múltiples elementos copiados accesible con Win+V.</value>
   </data>
   <data name="Customize.Preferences.ClipboardHistory.Recommendation.Reason" xml:space="preserve">
-    <value>Clipboard history lets you recall multiple past copies with Win+V, speeding up repetitive copy-paste workflows.</value>
+    <value>Permite recuperar elementos pasados con Win+V, acelerando flujos de trabajo repetitivos.</value>
   </data>
   <data name="Customize.Preferences.WindowShake.Name" xml:space="preserve">
-    <value>Window Shake</value>
+    <value>Agitar Ventana</value>
   </data>
   <data name="Customize.Preferences.WindowShake.Description" xml:space="preserve">
-    <value>Shake a window to minimize all other open windows.</value>
+    <value>Agita una ventana para minimizar todas las demás.</value>
   </data>
   <data name="Customize.Preferences.ClassicContextMenu.Name" xml:space="preserve">
-    <value>Classic Context Menu</value>
+    <value>Menú Contextual Clásico</value>
   </data>
   <data name="Customize.Preferences.ClassicContextMenu.Description" xml:space="preserve">
-    <value>Windows 10-style context menu on Windows 11.</value>
+    <value>Activa el menú contextual estilo Windows 10 en Windows 11.</value>
   </data>
   <data name="Customize.Preferences.ClassicContextMenu.Recommendation.Reason" xml:space="preserve">
-    <value>The classic menu shows all options at once without the extra click needed to expand Windows 11's condensed menu.</value>
+    <value>El menú clásico muestra todas las opciones sin requerir un clic extra para ver más alternativas.</value>
   </data>
   <data name="Customize.Preferences.ShowSecondsInSystemClock.Name" xml:space="preserve">
-    <value>Seconds in System Clock</value>
+    <value>Segundos en el Reloj</value>
   </data>
   <data name="Customize.Preferences.ShowSecondsInSystemClock.Description" xml:space="preserve">
-    <value>Displays seconds in the taskbar clock.</value>
+    <value>Muestra los segundos en el reloj de la barra de tareas.</value>
   </data>
   <data name="Customize.Gaming.Section.GameSettings" xml:space="preserve">
-    <value>Game Settings</value>
+    <value>Configuración de Juegos</value>
   </data>
   <data name="Customize.Gaming.Section.Input" xml:space="preserve">
-    <value>Input</value>
+    <value>Entrada</value>
   </data>
   <data name="Customize.Gaming.Section.Display" xml:space="preserve">
-    <value>Display</value>
+    <value>Pantalla</value>
   </data>
   <data name="Customize.Gaming.GameMode.Name" xml:space="preserve">
-    <value>Game Mode</value>
+    <value>Modo de Juego</value>
   </data>
   <data name="Customize.Gaming.GameMode.Description" xml:space="preserve">
-    <value>Windows Game Mode for gaming processes and Windows Update behavior.</value>
+    <value>Comportamiento del Modo de Juego y Windows Update mientras juegas.</value>
   </data>
   <data name="Customize.Gaming.GameMode.Recommendation.Reason" xml:space="preserve">
-    <value>Game Mode automatically prioritizes game processes and suspends Windows Update notifications while gaming for smoother performance.</value>
+    <value>Prioriza automáticamente los juegos y suspende las notificaciones de Windows Update para evitar tirones (stuttering).</value>
   </data>
   <data name="Customize.Gaming.GameBar.Name" xml:space="preserve">
     <value>Xbox Game Bar</value>
   </data>
   <data name="Customize.Gaming.GameBar.Description" xml:space="preserve">
-    <value>Controls Xbox Game Bar overlays, startup panel, and related background features.</value>
+    <value>Controla las superposiciones y funciones en segundo plano del Xbox Game Bar.</value>
   </data>
   <data name="Customize.Gaming.GameBar.Recommendation.Reason" xml:space="preserve">
-    <value>Disabling Game Bar frees up system resources and prevents background overlays from interfering with your games.</value>
+    <value>Desactivar el Game Bar libera recursos y evita superposiciones molestas al jugar.</value>
   </data>
   <data name="Customize.Gaming.BackgroundRecording.Name" xml:space="preserve">
-    <value>Background Recording (DVR)</value>
+    <value>Grabación en Segundo Plano (DVR)</value>
   </data>
   <data name="Customize.Gaming.BackgroundRecording.Description" xml:space="preserve">
-    <value>Controls automatic background game recording (Game DVR) and app capture.</value>
+    <value>Controla la grabación automática en segundo plano (Game DVR).</value>
   </data>
   <data name="Customize.Gaming.BackgroundRecording.Recommendation.Reason" xml:space="preserve">
-    <value>Disabling background recording stops DVR from silently capturing gameplay, saving CPU and disk write cycles.</value>
+    <value>Desactivar la grabación evita capturas silenciosas, ahorrando CPU y ciclos de escritura en disco.</value>
   </data>
   <data name="Customize.Gaming.MouseAcceleration.Name" xml:space="preserve">
-    <value>Mouse Acceleration</value>
+    <value>Aceleración del Ratón</value>
   </data>
   <data name="Customize.Gaming.MouseAcceleration.Description" xml:space="preserve">
-    <value>Windows mouse acceleration setting for cursor movement.</value>
+    <value>Configuración de aceleración del cursor en Windows.</value>
   </data>
   <data name="Customize.Gaming.MouseAcceleration.Recommendation.Reason" xml:space="preserve">
-    <value>Disabling acceleration gives you raw, linear mouse input for better aim precision and muscle memory consistency.</value>
+    <value>Desactivarla permite una entrada pura y lineal del ratón para una mejor memoria muscular y precisión.</value>
   </data>
   <data name="Customize.Gaming.FullscreenOptimizations.Name" xml:space="preserve">
-    <value>Fullscreen Optimizations</value>
+    <value>Optimizaciones de Pantalla Completa</value>
   </data>
   <data name="Customize.Gaming.FullscreenOptimizations.Description" xml:space="preserve">
-    <value>Windows DWM-based full-screen optimizations setting.</value>
+    <value>Ajuste de pantalla completa basado en el gestor de ventanas DWM.</value>
   </data>
   <data name="Customize.Gaming.FullscreenOptimizations.Recommendation.Reason" xml:space="preserve">
-    <value>Disable it if you experience in-game stuttering, input lag, or black screens (especially in competitive shooters).</value>
+    <value>Desactívalo si experimentas tirones (stuttering), lag o pantallas negras, especialmente en juegos competitivos.</value>
   </data>
   <data name="Customize.Gaming.HardwareAcceleratedGpuScheduling.Name" xml:space="preserve">
-    <value>Hardware-Accelerated GPU Scheduling</value>
+    <value>Programación de GPU Acelerada por Hardware</value>
   </data>
   <data name="Customize.Gaming.HardwareAcceleratedGpuScheduling.Description" xml:space="preserve">
-    <value>GPU video memory scheduling mode. Requires a compatible GPU driver.</value>
+    <value>Modo de programación de memoria de la GPU (Requiere un controlador compatible).</value>
   </data>
   <data name="Customize.Gaming.HardwareAcceleratedGpuScheduling.Recommendation.Reason" xml:space="preserve">
-    <value>GPU scheduling offloads frame management from the CPU to the GPU, cutting display latency and improving frame pacing.</value>
+    <value>Delega la gestión de fotogramas a la GPU, reduciendo la latencia de pantalla y mejorando la fluidez.</value>
   </data>
   <data name="Settings.Optimize.ShellTimeout.Warning" xml:space="preserve">
-    <value>Do NOT change unless you know exactly what you are doing</value>
+    <value>NO lo cambies a menos que sepas exactamente lo que haces</value>
   </data>
   <data name="Optimizer.PowerManagement.InstallOptimizerDuckPowerPlan.Error.DownloadFailed" xml:space="preserve">
-    <value>Failed to download optimizerDuck's power plan.</value>
+    <value>No se pudo descargar el plan de energía de optimizerDuck.</value>
   </data>
   <data name="Settings.About.Acknowledgements.Title" xml:space="preserve">
-    <value>Acknowledgments</value>
+    <value>Agradecimientos</value>
   </data>
   <data name="Settings.About.Acknowledgements.Description" xml:space="preserve">
-    <value>optimizerDuck is made possible by the following open-source software and resources.</value>
+    <value>optimizerDuck es posible gracias a los siguientes proyectos y recursos de código abierto.</value>
   </data>
   <data name="RestorePoint.Title" xml:space="preserve">
-    <value>System Restore</value>
+    <value>Restaurar Sistema</value>
   </data>
   <data name="RestorePointDialog.Description" xml:space="preserve">
-    <value>Restore Point allows you to revert your system to a previous state.
-It's a safety measure to protect your Windows before applying changes.</value>
+    <value>El punto de restauración te permite revertir tu sistema a un estado anterior.
+Es una medida de seguridad para proteger Windows antes de aplicar cambios.</value>
   </data>
   <data name="RestorePointDialog.Help" xml:space="preserve">
-    <value>The application will automatically enable System Restore and create a checkpoint named "optimizerDuck...".
-This ensures you can always go back if anything goes wrong.</value>
+    <value>La aplicación habilitará automáticamente Restaurar sistema y creará un punto de control llamado "optimizerDuck...".
+Esto garantiza que siempre puedas volver atrás si algo sale mal.</value>
   </data>
   <data name="RestorePoint.Snackbar.Error.Title" xml:space="preserve">
-    <value>Unable to create or enable System Restore.</value>
+    <value>No se pudo crear o activar Restaurar Sistema</value>
   </data>
   <data name="RestorePoint.Snackbar.Error.Message" xml:space="preserve">
-    <value>An error occurred while creating or enabling System Restore. Please try creating it manually.</value>
+    <value>Ocurrió un error al intentar crear el punto de restauración. Intenta crearlo manualmente.</value>
   </data>
   <data name="RestorePoint.Snackbar.Warning.LimitReached" xml:space="preserve">
-    <value>A restore point has already been created within the past 24 hours.</value>
+    <value>Ya se ha creado un punto de restauración en las últimas 24 horas.</value>
   </data>
   <data name="RestorePoint.Progress.Creating" xml:space="preserve">
-    <value>Creating a restore point...</value>
+    <value>Creando un punto de restauración...</value>
   </data>
   <data name="RestorePoint.Progress.Enabling" xml:space="preserve">
-    <value>Enabling System Restore...</value>
+    <value>Activando Restaurar Sistema...</value>
   </data>
   <data name="RestorePoint.Progress.Retrying" xml:space="preserve">
-    <value>Retrying to create the restore point...</value>
+    <value>Reintentando la creación del punto de restauración...</value>
   </data>
   <data name="RestorePoint.Snackbar.Success.Title" xml:space="preserve">
-    <value>Restore point created successfully</value>
+    <value>Punto de restauración creado con éxito</value>
   </data>
   <data name="RestorePoint.Snackbar.Success.Message" xml:space="preserve">
-    <value>A restore point has been created with the name: {0}.</value>
+    <value>Se ha creado un punto de restauración con el nombre: {0}.</value>
   </data>
   <data name="Snackbar.OpenLinkFailed.Title" xml:space="preserve">
-    <value>Unable to open the path</value>
+    <value>No se pudo abrir el enlace</value>
   </data>
   <data name="Snackbar.OpenLinkFailed.Message" xml:space="preserve">
-    <value>An error occurred while opening the path. Please check the log.</value>
+    <value>Ocurrió un error al intentar abrir el enlace. Revisa los registros.</value>
   </data>
   <data name="Snackbar.OpenFailed.Message" xml:space="preserve">
-    <value>An error occurred while opening the folder or file. Please check the log.</value>
+    <value>Ocurrió un error al abrir la carpeta o el archivo. Revisa los registros.</value>
   </data>
   <data name="Snackbar.OpenFailed.Title" xml:space="preserve">
-    <value>Unable to open the folder or file</value>
+    <value>No se pudo abrir la carpeta o el archivo</value>
   </data>
   <data name="Button.ViewLatestRelease" xml:space="preserve">
-    <value>View latest release</value>
+    <value>Ver última versión</value>
   </data>
   <data name="BloatwareDialog.Title" xml:space="preserve">
-    <value>Removing {0} AppX Package(s)</value>
+    <value>Eliminando {0} Paquete(s) AppX</value>
   </data>
   <data name="BloatwareDialog.Removing" xml:space="preserve">
-    <value>Removing {0} ({1}/{2})</value>
+    <value>Eliminando {0} ({1}/{2})</value>
   </data>
   <data name="Bloatware.Header.Title" xml:space="preserve">
-    <value>Bloatware</value>
+    <value>Programas Basura (Bloatware)</value>
   </data>
   <data name="Bloatware.Menu.Remove" xml:space="preserve">
-    <value>Remove ({0})</value>
+    <value>Eliminar ({0})</value>
   </data>
   <data name="Bloatware.Menu.Refresh" xml:space="preserve">
-    <value>Refresh</value>
+    <value>Actualizar</value>
   </data>
   <data name="Bloatware.Empty.Title" xml:space="preserve">
-    <value>No unnecessary apps found ¯\_(ツ)_/¯</value>
+    <value>No se encontraron aplicaciones innecesarias ¯\_(ツ)_/¯</value>
   </data>
   <data name="Bloatware.Empty.Description" xml:space="preserve">
-    <value>optimizerDuck didn't find any removable AppX packages. It's empty as a void...</value>
+    <value>optimizerDuck no encontró paquetes AppX eliminables. Está completamente limpio...</value>
   </data>
   <data name="Bloatware.Loading" xml:space="preserve">
-    <value>Looking for removable apps...</value>
+    <value>Buscando aplicaciones...</value>
   </data>
   <data name="Bloatware.Loading.Hint" xml:space="preserve">
-    <value>This may take a moment while the application scans for installed packages.</value>
+    <value>Esto tomará un momento mientras la aplicación escanea los paquetes instalados.</value>
   </data>
   <data name="Sidebar.Bloatware" xml:space="preserve">
     <value>Bloatware</value>
   </data>
   <data name="BloatwareDialog.Confirmation.Title" xml:space="preserve">
-    <value>Remove {0} App(s)?</value>
+    <value>¿Eliminar {0} Aplicación(es)?</value>
   </data>
   <data name="BloatwareDialog.Confirmation.Message" xml:space="preserve">
-    <value>You are about to remove: {0}</value>
+    <value>Estás a punto de eliminar: {0}</value>
   </data>
   <data name="BloatwareDialog.Confirmation.Description" xml:space="preserve">
-    <value>Review the selected apps before removal. Proceed only if you are sure.</value>
+    <value>Revisa las aplicaciones seleccionadas antes de continuar.</value>
   </data>
   <data name="BloatwareDialog.Confirmation.SelectedList" xml:space="preserve">
-    <value>Selected applications</value>
+    <value>Aplicaciones seleccionadas</value>
   </data>
   <data name="Settings.Bloatware.Header" xml:space="preserve">
     <value>Bloatware</value>
   </data>
   <data name="Settings.Bloatware.RemoveProvisioned.Title" xml:space="preserve">
-    <value>Remove Provisioned packages</value>
+    <value>Eliminar Paquetes de Aprovisionamiento</value>
   </data>
   <data name="Settings.Bloatware.RemoveProvisioned.Description" xml:space="preserve">
-    <value>When removing installed AppX packages, also remove the corresponding Provisioned packages to prevent automatic reinstallation for new users.</value>
+    <value>Al eliminar paquetes AppX, también eliminará sus equivalentes en aprovisionamiento para que no vuelvan a instalarse para los nuevos usuarios.</value>
   </data>
   <data name="Dashboard.UpdateInfoBar.Message" xml:space="preserve">
-    <value>optimizerDuck (v{0}) is available!
-Update now to enjoy the latest features, improvements, and bug fixes.</value>
+    <value>¡optimizerDuck (v{0}) está disponible!
+Actualiza ahora para disfrutar de las nuevas funciones y mejoras.</value>
   </data>
   <data name="Common.Search.Placeholder" xml:space="preserve">
-    <value>Search...</value>
+    <value>Buscar...</value>
   </data>
   <data name="Common.Filter.All" xml:space="preserve">
-    <value>All</value>
+    <value>Todos</value>
   </data>
   <data name="Common.SortBy.Default" xml:space="preserve">
-    <value>Default</value>
+    <value>Predeterminado</value>
   </data>
   <data name="Common.SortBy.Name" xml:space="preserve">
-    <value>Name</value>
+    <value>Nombre</value>
   </data>
   <data name="Common.SortBy.Risk" xml:space="preserve">
-    <value>Risk</value>
+    <value>Riesgo</value>
   </data>
   <data name="Common.SortBy.Publisher" xml:space="preserve">
-    <value>Publisher</value>
+    <value>Desarrollador</value>
   </data>
   <data name="Common.SortBy.Size" xml:space="preserve">
-    <value>Size</value>
+    <value>Tamaño</value>
   </data>
   <data name="Common.SortBy.Path" xml:space="preserve">
-    <value>Path</value>
+    <value>Ruta</value>
   </data>
   <data name="Optimizer.Menu.ApplyAllSafe" xml:space="preserve">
-    <value>Apply All Safe</value>
+    <value>Aplicar Todo lo Seguro</value>
   </data>
   <data name="Optimizer.Menu.ApplyAll" xml:space="preserve">
-    <value>Apply Everything</value>
+    <value>Aplicar Todo</value>
   </data>
   <data name="Optimizer.Menu.ViewSource" xml:space="preserve">
-    <value>View Source</value>
+    <value>Ver Código</value>
   </data>
   <data name="Bloatware.Menu.SelectAllSafe" xml:space="preserve">
-    <value>Select all Safe</value>
+    <value>Seleccionar Todos los Seguros</value>
   </data>
   <data name="Bloatware.Menu.DeselectAllSafe" xml:space="preserve">
-    <value>Deselect all Safe</value>
+    <value>Deseleccionar Todos los Seguros</value>
   </data>
   <data name="Optimizer.Menu.HideApplied" xml:space="preserve">
-    <value>Hide Applied</value>
+    <value>Ocultar Aplicados</value>
   </data>
   <data name="Optimizer.Menu.ApplyMenu" xml:space="preserve">
-    <value>Apply</value>
+    <value>Aplicar</value>
   </data>
   <data name="Optimizer.Menu.BatchApply.Title" xml:space="preserve">
-    <value>Applying Optimizations</value>
+    <value>Aplicando Optimizaciones</value>
   </data>
   <data name="Bloatware.Search.NoResults" xml:space="preserve">
-    <value>No results found. Try a different search term or filter.</value>
+    <value>No se encontraron resultados. Intenta con otro término o filtro.</value>
   </data>
   <data name="Common.Filter" xml:space="preserve">
-    <value>Filter</value>
+    <value>Filtro</value>
   </data>
   <data name="Common.SortBy" xml:space="preserve">
-    <value>Sort by</value>
+    <value>Ordenar por</value>
   </data>
   <data name="Sidebar.DiskCleanup" xml:space="preserve">
-    <value>Disk Cleanup</value>
+    <value>Limpieza de Disco</value>
   </data>
   <data name="DiskCleanup.Header.Title" xml:space="preserve">
-    <value>Disk Cleanup</value>
+    <value>Limpieza de Disco</value>
   </data>
   <data name="DiskCleanup.Header.Description" xml:space="preserve">
-    <value>Free up disk space by removing temporary files and cache</value>
+    <value>Libera espacio en el disco eliminando archivos temporales y caché</value>
   </data>
   <data name="DiskCleanup.TotalSpace" xml:space="preserve">
-    <value>Total reclaimable space</value>
+    <value>Espacio total recuperable</value>
   </data>
   <data name="DiskCleanup.Button.Scan" xml:space="preserve">
-    <value>Scan</value>
+    <value>Escanear</value>
   </data>
   <data name="DiskCleanup.Button.SelectAll" xml:space="preserve">
-    <value>Select All</value>
+    <value>Seleccionar Todos</value>
   </data>
   <data name="DiskCleanup.Button.DeselectAll" xml:space="preserve">
-    <value>Deselect All</value>
+    <value>Deseleccionar Todos</value>
   </data>
   <data name="DiskCleanup.Scanning" xml:space="preserve">
-    <value>Scanning...</value>
+    <value>Escaneando...</value>
   </data>
   <data name="DiskCleanup.Loading" xml:space="preserve">
-    <value>Loading cleanup items...</value>
+    <value>Cargando elementos a limpiar...</value>
   </data>
   <data name="DiskCleanup.Complete.Title" xml:space="preserve">
-    <value>Cleanup Complete</value>
+    <value>Limpieza Completada</value>
   </data>
   <data name="DiskCleanup.Complete.Message" xml:space="preserve">
-    <value>Successfully freed {0} of disk space in {1}</value>
+    <value>Se ha liberado {0} de espacio en {1}</value>
   </data>
   <data name="DiskCleanup.Error.Title" xml:space="preserve">
-    <value>Cleanup Error</value>
+    <value>Error de Limpieza</value>
   </data>
   <data name="DiskCleanup.Error.Message" xml:space="preserve">
-    <value>Some files could not be deleted. They may be in use by another process.</value>
+    <value>Algunos archivos no se pudieron eliminar. Pueden estar en uso por otro proceso.</value>
   </data>
   <data name="DiskCleanup.Item.TempFiles" xml:space="preserve">
-    <value>Temporary Files</value>
+    <value>Archivos Temporales</value>
   </data>
   <data name="DiskCleanup.Item.TempFiles.Description" xml:space="preserve">
-    <value>User temporary files created by applications (excluding the .net temp directory)</value>
+    <value>Archivos temporales del usuario creados por aplicaciones (excluyendo el directorio .net temp)</value>
   </data>
   <data name="DiskCleanup.Item.SystemTemp" xml:space="preserve">
-    <value>System Temp Files</value>
+    <value>Archivos Temporales del Sistema</value>
   </data>
   <data name="DiskCleanup.Item.SystemTemp.Description" xml:space="preserve">
-    <value>Windows system temporary files</value>
+    <value>Archivos temporales del sistema Windows</value>
   </data>
   <data name="DiskCleanup.Item.WindowsUpdate" xml:space="preserve">
-    <value>Windows Update Cache</value>
+    <value>Caché de Windows Update</value>
   </data>
   <data name="DiskCleanup.Item.WindowsUpdate.Description" xml:space="preserve">
-    <value>Downloaded Windows Update files that are no longer needed</value>
+    <value>Archivos descargados de Windows Update que ya no son necesarios</value>
   </data>
   <data name="DiskCleanup.Item.Prefetch" xml:space="preserve">
-    <value>Prefetch Files</value>
+    <value>Archivos Prefetch</value>
   </data>
   <data name="DiskCleanup.Item.Prefetch.Description" xml:space="preserve">
-    <value>Application prefetch data used to speed up loading</value>
+    <value>Datos de prefetch de aplicaciones usados para acelerar la carga</value>
   </data>
   <data name="DiskCleanup.Item.Thumbnails" xml:space="preserve">
-    <value>Thumbnail Cache</value>
+    <value>Caché de Miniaturas</value>
   </data>
   <data name="DiskCleanup.Item.Thumbnails.Description" xml:space="preserve">
-    <value>Cached thumbnail images for Explorer file previews</value>
+    <value>Imágenes en caché para vistas previas en el Explorador</value>
   </data>
   <data name="DiskCleanup.Item.RecycleBin" xml:space="preserve">
-    <value>Recycle Bin</value>
+    <value>Papelera de Reciclaje</value>
   </data>
   <data name="DiskCleanup.Item.RecycleBin.Description" xml:space="preserve">
-    <value>Deleted files still stored in the Recycle Bin</value>
+    <value>Archivos eliminados que siguen almacenados en la Papelera de Reciclaje</value>
   </data>
   <data name="DiskCleanup.Item.ErrorReports" xml:space="preserve">
-    <value>Error Reports</value>
+    <value>Informes de Errores</value>
   </data>
   <data name="DiskCleanup.Item.ErrorReports.Description" xml:space="preserve">
-    <value>Windows error reports and crash dump files</value>
+    <value>Informes de errores y archivos de volcado de Windows</value>
   </data>
   <data name="DiskCleanup.Item.OldWindowsInstallation" xml:space="preserve">
-    <value>Old Windows Installation (Windows.old)</value>
+    <value>Instalación Antigua de Windows (Windows.old)</value>
   </data>
   <data name="DiskCleanup.Item.OldWindowsInstallation.Description" xml:space="preserve">
-    <value>Previous Windows installation files kept after a major update or upgrade</value>
+    <value>Archivos de instalaciones previas mantenidos después de una actualización importante</value>
   </data>
   <data name="Dashboard.SystemInfo.Os.DeviceType.Laptop" xml:space="preserve">
-    <value>Laptop</value>
+    <value>Portátil</value>
   </data>
   <data name="Dashboard.SystemInfo.Os.DeviceType.Desktop" xml:space="preserve">
-    <value>Desktop</value>
+    <value>Escritorio</value>
   </data>
   <data name="Dashboard.SystemInfo.Os.Build" xml:space="preserve">
-    <value>Build {0}</value>
+    <value>Compilación {0}</value>
   </data>
   <data name="Bloatware.Header.Description" xml:space="preserve">
-    <value>Manage and remove pre-installed applications that you don't need</value>
+    <value>Administra y elimina las aplicaciones preinstaladas que no necesitas</value>
   </data>
   <data name="Dashboard.SystemInfo.Header" xml:space="preserve">
-    <value>System Information</value>
+    <value>Información del Sistema</value>
   </data>
   <data name="DiskCleanup.ItemsSelected" xml:space="preserve">
-    <value>{0} ({1} items selected)</value>
+    <value>{0} ({1} elementos seleccionados)</value>
   </data>
   <data name="DiskCleanup.Button.Clean" xml:space="preserve">
-    <value>Clean</value>
+    <value>Limpiar</value>
   </data>
   <data name="DiskCleanup.Button.CleanSelected" xml:space="preserve">
-    <value>Clean Selected ({0})</value>
+    <value>Limpiar Seleccionados ({0})</value>
   </data>
   <data name="DiskCleanup.EmptySize" xml:space="preserve">
-    <value>Empty size</value>
+    <value>Sin tamaño</value>
   </data>
   <data name="DiskCleanup.FilesCount" xml:space="preserve">
-    <value>{0} files</value>
+    <value>{0} archivos</value>
   </data>
   <data name="DiskCleanup.ItemsAndFilesSelected" xml:space="preserve">
-    <value>{0} selected • {1} items • {2} files</value>
+    <value>{0} seleccionados • {1} elementos • {2} archivos</value>
   </data>
   <data name="Settings.About.NeedHelp.Title" xml:space="preserve">
-      <value>Need help?</value>
+      <value>¿Necesitas ayuda?</value>
     </data>
   <data name="Sidebar.StartupManager" xml:space="preserve">
-    <value>Startup Manager</value>
+    <value>Gestor de Inicio</value>
   </data>
   <data name="StartupManager.Header.Title" xml:space="preserve">
-    <value>Startup Manager</value>
+    <value>Gestor de Inicio</value>
   </data>
   <data name="StartupManager.Header.Description" xml:space="preserve">
-    <value>Manage applications and tasks that run automatically when Windows starts.</value>
+    <value>Administra aplicaciones y tareas que se ejecutan al iniciar Windows.</value>
   </data>
   <data name="OptimizationDetailsDialog.Other" xml:space="preserve">
-    <value>Other</value>
+    <value>Otros</value>
   </data>
   <data name="OptimizationDetailsDialog.Other.OpenRevertFile.Description" xml:space="preserve">
-    <value>Open the raw json file containing revert data for this optimization.</value>
+    <value>Abre el archivo JSON con los datos de reversión para esta optimización.</value>
   </data>
   <data name="OptimizationDetailsDialog.Other.ViewSource.Description" xml:space="preserve">
-    <value>Open the source code for this optimization in your browser.</value>
+    <value>Mira el código fuente de esta optimización en tu navegador.</value>
   </data>
   <data name="OptimizationDetailsDialog.Other.ViewSource.Title" xml:space="preserve">
-    <value>View Source on GitHub</value>
+    <value>Ver en GitHub</value>
   </data>
   <data name="OptimizationDetailsDialog.Risk" xml:space="preserve">
-    <value>Risk Level</value>
+    <value>Nivel de Riesgo</value>
   </data>
   <data name="OptimizationDetailsDialog.TechnicalDetails" xml:space="preserve">
-    <value>Technical Details</value>
+    <value>Detalles Técnicos</value>
   </data>
   <data name="OptimizationDetailsDialog.Id" xml:space="preserve">
-    <value>Optimization ID</value>
+    <value>ID de Optimización</value>
   </data>
   <data name="OptimizationDetailsDialog.Class" xml:space="preserve">
-    <value>Class Name</value>
+    <value>Clase</value>
   </data>
   <data name="StartupManager.Apps.Title" xml:space="preserve">
-    <value>Startup Apps</value>
+    <value>Aplicaciones de Inicio</value>
   </data>
   <data name="StartupManager.Apps.Description" xml:space="preserve">
-    <value>Applications that run automatically when Windows starts.</value>
+    <value>Aplicaciones que se ejecutan automáticamente al iniciar Windows.</value>
   </data>
   <data name="StartupManager.Apps.CountSuffix" xml:space="preserve">
-    <value>{0} items</value>
+    <value>{0} elementos</value>
   </data>
   <data name="StartupManager.Tasks.Title" xml:space="preserve">
-    <value>Scheduled Tasks (Logon)</value>
+    <value>Tareas Programadas (Inicio de Sesión)</value>
   </data>
   <data name="StartupManager.Tasks.Description" xml:space="preserve">
-    <value>Windows tasks configured to run at logon or on a schedule.</value>
+    <value>Tareas configuradas para ejecutarse al iniciar sesión o por programa.</value>
   </data>
   <data name="StartupManager.Tasks.CountSuffix" xml:space="preserve">
-    <value>{0} tasks</value>
+    <value>{0} tareas</value>
   </data>
   <data name="StartupManager.Loading" xml:space="preserve">
-    <value>Scanning startup items...</value>
+    <value>Escaneando elementos de inicio...</value>
   </data>
   <data name="StartupManager.Loading.Hint" xml:space="preserve">
-    <value>This may take a moment while the application scans the registry and startup folders.</value>
+    <value>Esto puede tardar un momento mientras se escanea el registro y carpetas de inicio.</value>
   </data>
   <data name="StartupManager.Empty.Title" xml:space="preserve">
-    <value>No startup items</value>
+    <value>No hay elementos de inicio</value>
   </data>
   <data name="StartupManager.Empty.Description" xml:space="preserve">
-    <value>No startup applications or scheduled tasks were found on this system.</value>
+    <value>No se encontraron aplicaciones ni tareas al iniciar Windows.</value>
   </data>
   <data name="StartupManager.Menu.Refresh" xml:space="preserve">
-    <value>Refresh</value>
+    <value>Actualizar</value>
   </data>
   <data name="Common.Toggle.On" xml:space="preserve">
-    <value>On</value>
+    <value>Sí</value>
   </data>
   <data name="Common.Toggle.Off" xml:space="preserve">
-    <value>Off</value>
+    <value>No</value>
   </data>
   <data name="Common.SortBy.Status" xml:space="preserve">
-    <value>Status</value>
+    <value>Estado</value>
   </data>
   <data name="Common.Status.Applied" xml:space="preserve">
-    <value>Applied</value>
+    <value>Aplicado</value>
   </data>
   <data name="StartupManager.Menu.OpenSettings" xml:space="preserve">
-    <value>Open Settings</value>
+    <value>Abrir Configuración</value>
   </data>
   <!-- Scheduled Tasks (Startup Manager) -->
   <data name="StartupManager.Tasks.HideMicrosoft" xml:space="preserve">
-    <value>Hide Microsoft tasks</value>
+    <value>Ocultar tareas de Microsoft</value>
   </data>
   <!-- Sidebar -->
   <data name="Sidebar.ScheduledTasks" xml:space="preserve">
-    <value>Scheduled Tasks</value>
+    <value>Tareas Programadas</value>
   </data>
   <!-- Scheduled Tasks Page -->
   <data name="ScheduledTasks.Header.Title" xml:space="preserve">
-    <value>Scheduled Tasks</value>
+    <value>Tareas Programadas</value>
   </data>
   <data name="ScheduledTasks.Header.Description" xml:space="preserve">
-    <value>View and manage Windows scheduled tasks.</value>
+    <value>Mira y administra todas las tareas programadas de Windows.</value>
   </data>
   <data name="ScheduledTasks.Loading" xml:space="preserve">
-    <value>Loading scheduled tasks...</value>
+    <value>Cargando tareas...</value>
   </data>
   <data name="ScheduledTasks.Loading.Hint" xml:space="preserve">
-    <value>This may take a moment while scanning for all scheduled tasks on your system...</value>
+    <value>Esto tomará un momento mientras se escanean las tareas del sistema...</value>
   </data>
   <data name="ScheduledTasks.HideMicrosoft" xml:space="preserve">
-    <value>Hide Microsoft tasks</value>
+    <value>Ocultar tareas de Microsoft</value>
   </data>
   <data name="ScheduledTasks.Menu.CreateTask" xml:space="preserve">
-    <value>Create Task</value>
+    <value>Crear Tarea</value>
   </data>
   <!-- Scheduled Tasks Actions -->
   <data name="ScheduledTasks.Action.Details" xml:space="preserve">
-    <value>View Details</value>
+    <value>Ver Detalles</value>
   </data>
   <data name="ScheduledTasks.Action.Run" xml:space="preserve">
-    <value>Run</value>
+    <value>Ejecutar</value>
   </data>
   <data name="ScheduledTasks.Action.Stop" xml:space="preserve">
-    <value>Stop</value>
+    <value>Detener</value>
   </data>
   <data name="ScheduledTasks.Action.Delete" xml:space="preserve">
-    <value>Delete</value>
+    <value>Eliminar</value>
   </data>
   <!-- Scheduled Tasks Dialogs -->
   <data name="ScheduledTasks.Dialog.DeleteTitle" xml:space="preserve">
-    <value>Delete Scheduled Task</value>
+    <value>Eliminar Tarea Programada</value>
   </data>
   <data name="ScheduledTasks.Dialog.DeleteMessage" xml:space="preserve">
-    <value>Are you sure you want to delete the task "{0}"? This action cannot be undone.</value>
+    <value>¿Seguro que deseas eliminar la tarea "{0}"? Esta acción no se puede deshacer.</value>
   </data>
   <!-- Scheduled Tasks Details -->
   <data name="ScheduledTasks.Details.Path" xml:space="preserve">
-    <value>Path</value>
+    <value>Ruta</value>
   </data>
   <data name="ScheduledTasks.Details.Description" xml:space="preserve">
-    <value>Description</value>
+    <value>Descripción</value>
   </data>
   <data name="ScheduledTasks.Details.Author" xml:space="preserve">
-    <value>Author</value>
+    <value>Autor</value>
   </data>
   <data name="ScheduledTasks.Details.State" xml:space="preserve">
-    <value>State</value>
+    <value>Estado</value>
   </data>
   <data name="ScheduledTasks.Details.Triggers" xml:space="preserve">
-    <value>Triggers</value>
+    <value>Disparadores</value>
   </data>
   <data name="ScheduledTasks.Details.Action" xml:space="preserve">
-    <value>Action</value>
+    <value>Acción</value>
   </data>
   <data name="ScheduledTasks.Details.LastRun" xml:space="preserve">
-    <value>Last Run</value>
+    <value>Última Ejecución</value>
   </data>
   <data name="ScheduledTasks.Details.NextRun" xml:space="preserve">
-    <value>Next Run</value>
+    <value>Siguiente Ejecución</value>
   </data>
   <data name="ScheduledTasks.Details.LastResult" xml:space="preserve">
-    <value>Last Result</value>
+    <value>Último Resultado</value>
   </data>
   <!-- Common -->
   <data name="Common.Delete" xml:space="preserve">
-    <value>Delete</value>
+    <value>Eliminar</value>
   </data>
   <data name="Common.Cancel" xml:space="preserve">
-    <value>Cancel</value>
+    <value>Cancelar</value>
   </data>
   <data name="Common.SortBy.State" xml:space="preserve">
-    <value>State</value>
+    <value>Estado</value>
   </data>
   <data name="ScheduledTasks.Menu.OpenSettings" xml:space="preserve">
-    <value>Open Task Scheduler</value>
+    <value>Abrir Programador de Tareas</value>
   </data>
   <data name="ScheduledTasks.Details.Name" xml:space="preserve">
-    <value>Name</value>
+    <value>Nombre</value>
   </data>
   <data name="ScheduledTasks.Snackbar.Enabled.Title" xml:space="preserve">
-    <value>Task Enabled</value>
+    <value>Tarea Habilitada</value>
   </data>
   <data name="ScheduledTasks.Snackbar.Disabled.Title" xml:space="preserve">
-    <value>Task Disabled</value>
+    <value>Tarea Deshabilitada</value>
   </data>
   <data name="ScheduledTasks.Snackbar.Toggle.Message" xml:space="preserve">
-    <value>{0} has been updated successfully.</value>
+    <value>{0} se ha actualizado correctamente.</value>
   </data>
   <data name="ScheduledTasks.Snackbar.Run.Title" xml:space="preserve">
-    <value>Task Started</value>
+    <value>Tarea Iniciada</value>
   </data>
   <data name="ScheduledTasks.Snackbar.Run.Message" xml:space="preserve">
-    <value>{0} is now running.</value>
+    <value>{0} se está ejecutando ahora.</value>
   </data>
   <data name="ScheduledTasks.Snackbar.Stop.Title" xml:space="preserve">
-    <value>Task Stopped</value>
+    <value>Tarea Detenida</value>
   </data>
   <data name="ScheduledTasks.Snackbar.Stop.Message" xml:space="preserve">
-    <value>{0} has been stopped.</value>
+    <value>{0} ha sido detenida.</value>
   </data>
   <data name="ScheduledTasks.Snackbar.Delete.Title" xml:space="preserve">
-    <value>Task Deleted</value>
+    <value>Tarea Eliminada</value>
   </data>
   <data name="ScheduledTasks.Snackbar.Delete.Message" xml:space="preserve">
-    <value>{0} has been deleted.</value>
+    <value>{0} ha sido eliminada.</value>
   </data>
   <data name="ScheduledTasks.Snackbar.Create.Title" xml:space="preserve">
-    <value>Task Created</value>
+    <value>Tarea Creada</value>
   </data>
   <data name="ScheduledTasks.Snackbar.Create.Message" xml:space="preserve">
-    <value>{0} has been created successfully.</value>
+    <value>{0} se creó correctamente.</value>
   </data>
   <data name="ScheduledTasks.Snackbar.Error.Title" xml:space="preserve">
 
     <value>Error</value>
   </data>
   <data name="Settings.About.NeedHelp.Description" xml:space="preserve">
-      <value>If you need help with optimization or have any questions, please join our community for quick support.</value>
+      <value>Si tienes preguntas o necesitas ayuda para optimizar, únete a nuestra comunidad para obtener soporte.</value>
     </data>
   <data name="ScheduledTasks.Error.TaskNotFound" xml:space="preserve">
-      <value>Task not found: {0}</value>
+      <value>No se encontró la tarea: {0}</value>
     </data>
   <data name="Service.Registry.Name" xml:space="preserve">
-    <value>Registry</value>
+    <value>Registro</value>
   </data>
   <data name="Service.Service.Name" xml:space="preserve">
-    <value>Service</value>
+    <value>Servicio</value>
   </data>
   <data name="Service.ScheduledTask.Name" xml:space="preserve">
-    <value>Scheduled Task</value>
+    <value>Tarea Programada</value>
   </data>
   <data name="Service.Shell.Name" xml:space="preserve">
-    <value>Shell</value>
+    <value>Terminal</value>
   </data>
   <data name="Service.Registry.Description.Write" xml:space="preserve">
-    <value>Write registry value: {0}\{1}</value>
+    <value>Escribir valor del registro: {0}\{1}</value>
   </data>
   <data name="Service.Registry.Description.Delete" xml:space="preserve">
-    <value>Delete registry value: {0}\{1}</value>
+    <value>Eliminar valor del registro: {0}\{1}</value>
   </data>
   <data name="Service.Service.Description.Change" xml:space="preserve">
-    <value>Change service '{0}' to {1} startup</value>
+    <value>Cambiar servicio '{0}' a inicio {1}</value>
   </data>
   <data name="Service.ScheduledTask.Description.Enable" xml:space="preserve">
-    <value>Enable scheduled task: {0}</value>
+    <value>Habilitar tarea programada: {0}</value>
   </data>
   <data name="Service.ScheduledTask.Description.Disable" xml:space="preserve">
-    <value>Disable scheduled task: {0}</value>
+    <value>Deshabilitar tarea programada: {0}</value>
   </data>
   <data name="Service.ScheduledTask.ErrorDetail.AccessDeniedDisable" xml:space="preserve">
-    <value>Access denied disabling task {0}</value>
+    <value>Acceso denegado al deshabilitar {0}</value>
   </data>
   <data name="Service.ScheduledTask.ErrorDetail.AccessDeniedEnable" xml:space="preserve">
-    <value>Access denied enabling task {0}</value>
+    <value>Acceso denegado al habilitar {0}</value>
   </data>
   <data name="Revert.Registry.Description.Restore" xml:space="preserve">
-    <value>Restore registry value: {0}\{1}</value>
+    <value>Restaurar valor del registro: {0}\{1}</value>
   </data>
   <data name="Revert.Registry.Description.Delete" xml:space="preserve">
-    <value>Delete registry value: {0}\{1}</value>
+    <value>Eliminar valor del registro: {0}\{1}</value>
   </data>
   <data name="Revert.Service.Description.Restore" xml:space="preserve">
-    <value>Restore service '{0}' to {1} startup</value>
+    <value>Restaurar servicio '{0}' a inicio {1}</value>
   </data>
   <data name="Revert.ScheduledTask.Description.Enable" xml:space="preserve">
-    <value>Enable scheduled task: {0}</value>
+    <value>Habilitar tarea: {0}</value>
   </data>
   <data name="Revert.ScheduledTask.Description.Disable" xml:space="preserve">
-    <value>Disable scheduled task: {0}</value>
+    <value>Deshabilitar tarea: {0}</value>
   </data>
   <data name="Revert.Shell.Description.Run" xml:space="preserve">
-    <value>Run {0} command: {1}</value>
+    <value>Ejecutar comando {0}: {1}</value>
   </data>
   <data name="Revert.Shell.Error.UnknownShellType" xml:space="preserve">
-    <value>Unknown shell type</value>
+    <value>Tipo de terminal desconocido</value>
   </data>
   <data name="Revert.Shell.Error.CommandFailed" xml:space="preserve">
-    <value>Revert command failed with exit code {0}</value>
+    <value>El comando falló con código de salida {0}</value>
   </data>
   <data name="Revert.UsbPower.Error.CommandFailed" xml:space="preserve">
-    <value>USB power revert failed with exit code {0}</value>
+    <value>La reversión de energía USB falló con código de salida {0}</value>
   </data>
   <data name="Settings.Optimize.ShowCompletionNotification.Title" xml:space="preserve">
-    <value>Show completion notification</value>
+    <value>Mostrar notificación de finalización</value>
   </data>
   <data name="Settings.Optimize.ShowCompletionNotification.Description" xml:space="preserve">
-    <value>Displays a notification when optimizations have been successfully applied or reverted.</value>
+    <value>Muestra una notificación cuando las optimizaciones se han aplicado o revertido correctamente.</value>
   </data>
   <data name="Optimizations.Loading" xml:space="preserve">
-    <value>Loading optimizations...</value>
+    <value>Cargando optimizaciones...</value>
   </data>
   <data name="Optimizations.Loading.Hint" xml:space="preserve">
-    <value>Please wait...</value>
+    <value>Por favor, espera...</value>
   </data>
   <data name="Common.OpenFolder" xml:space="preserve">
-    <value>Open Folder</value>
+    <value>Abrir Carpeta</value>
   </data>
   <data name="Common.Other" xml:space="preserve">
-    <value>Other</value>
+    <value>Otro</value>
   </data>
   <data name="Sidebar.Customize" xml:space="preserve">
-    <value>Customize</value>
+    <value>Personalizar</value>
   </data>
   <data name="Customize.Title" xml:space="preserve">
-    <value>Customize</value>
+    <value>Personalizar</value>
   </data>
   <data name="Customize.SystemFeatures.Name" xml:space="preserve">
-    <value>System</value>
+    <value>Sistema</value>
   </data>
   <data name="Customize.SystemFeatures.Description" xml:space="preserve">
-    <value>Core system features and behaviors</value>
+    <value>Funciones y comportamientos centrales del sistema</value>
   </data>
   <data name="Customize.SystemFeatures.Section.Boot" xml:space="preserve">
-    <value>Boot Operations</value>
+    <value>Opciones de Arranque</value>
   </data>
   <data name="Customize.SystemFeatures.Section.Input" xml:space="preserve">
-    <value>Input Settings</value>
+    <value>Ajustes de Entrada</value>
   </data>
   <data name="Customize.SystemFeatures.NumLockOnBoot.Name" xml:space="preserve">
-    <value>NumLock on Boot</value>
+    <value>Bloq Num al Arrancar</value>
   </data>
   <data name="Customize.SystemFeatures.NumLockOnBoot.Description" xml:space="preserve">
-    <value>NumLock state at the Windows login screen.</value>
+    <value>Activa el Bloqueo Numérico en la pantalla de inicio de sesión de Windows.</value>
   </data>
   <data name="Customize.SystemFeatures.NumLockOnBoot.Recommendation.Reason" xml:space="preserve">
-    <value>Enabling NumLock at boot ensures the numpad is ready immediately after login, avoiding manual toggling each time.</value>
+    <value>Mantiene el teclado numérico siempre activo tras el inicio de sesión, evitando tener que activarlo manualmente cada vez.</value>
   </data>
   <data name="Customize.SystemFeatures.Section.Services" xml:space="preserve">
-    <value>Services</value>
+    <value>Servicios</value>
   </data>
   <data name="Customize.SystemFeatures.Section.Power" xml:space="preserve">
-    <value>Power Settings</value>
+    <value>Opciones de Energía</value>
   </data>
   <data name="Customize.Desktop.Name" xml:space="preserve">
-    <value>Desktop</value>
+    <value>Escritorio</value>
   </data>
   <data name="Customize.Desktop.Description" xml:space="preserve">
-    <value>Desktop icons and shortcut settings</value>
+    <value>Íconos y accesos directos del escritorio</value>
   </data>
   <data name="Customize.Desktop.Section.Icons" xml:space="preserve">
-    <value>Desktop Icons</value>
+    <value>Íconos del Escritorio</value>
   </data>
   <data name="Customize.Desktop.Section.Behaviors" xml:space="preserve">
-    <value>Shortcut Behaviors</value>
+    <value>Comportamientos de Accesos Directos</value>
   </data>
   <data name="Customize.Desktop.ShowThisPc.Name" xml:space="preserve">
-    <value>This PC</value>
+    <value>Este Equipo</value>
   </data>
   <data name="Customize.Desktop.ShowThisPc.Description" xml:space="preserve">
-    <value>Displays the This PC icon on your desktop</value>
+    <value>Muestra el ícono de 'Este Equipo' en el escritorio.</value>
   </data>
   <data name="Customize.Desktop.ShowRecycleBin.Name" xml:space="preserve">
-    <value>Recycle Bin</value>
+    <value>Papelera de Reciclaje</value>
   </data>
   <data name="Customize.Desktop.ShowRecycleBin.Description" xml:space="preserve">
-    <value>Displays the Recycle Bin icon on your desktop</value>
+    <value>Muestra el ícono de la Papelera de Reciclaje.</value>
   </data>
   <data name="Customize.Desktop.ShowUserFiles.Name" xml:space="preserve">
-    <value>User Files</value>
+    <value>Archivos del Usuario</value>
   </data>
   <data name="Customize.Desktop.ShowUserFiles.Description" xml:space="preserve">
-    <value>Displays your user profile folder as a desktop icon</value>
+    <value>Muestra la carpeta de tu usuario como un ícono.</value>
   </data>
   <data name="Customize.Desktop.ShowNetwork.Name" xml:space="preserve">
-    <value>Network</value>
+    <value>Red</value>
   </data>
   <data name="Customize.Desktop.ShowNetwork.Description" xml:space="preserve">
-    <value>Displays the Network icon on your desktop</value>
+    <value>Muestra el ícono de Red en tu escritorio.</value>
   </data>
   <data name="Customize.Desktop.ShowControlPanel.Name" xml:space="preserve">
-    <value>Control Panel</value>
+    <value>Panel de Control</value>
   </data>
   <data name="Customize.Desktop.ShowControlPanel.Description" xml:space="preserve">
-    <value>Displays the Control Panel icon on your desktop</value>
+    <value>Muestra el Panel de Control en tu escritorio.</value>
   </data>
   <data name="Customize.Desktop.ShowDesktopIcons.Name" xml:space="preserve">
-    <value>Desktop Icons</value>
+    <value>Íconos en el Escritorio</value>
   </data>
   <data name="Customize.Desktop.ShowDesktopIcons.Description" xml:space="preserve">
-    <value>Shows or hides all desktop icons at once</value>
+    <value>Muestra u oculta todos los íconos del escritorio a la vez.</value>
   </data>
   <data name="Customize.Desktop.ShortcutArrow.Name" xml:space="preserve">
-    <value>Shortcut Arrow</value>
+    <value>Flecha de Acceso Directo</value>
   </data>
   <data name="Customize.Desktop.ShortcutArrow.Description" xml:space="preserve">
-    <value>Shows or hides the shortcut arrow overlay on desktop icons</value>
+    <value>Oculta la pequeña flecha sobre los íconos de accesos directos.</value>
   </data>
   <data name="Customize.Preferences.LaunchToThisPc.Name" xml:space="preserve">
-    <value>Launch to "This PC"</value>
+    <value>Abrir en "Este Equipo"</value>
   </data>
   <data name="Customize.Preferences.LaunchToThisPc.Description" xml:space="preserve">
-    <value>File Explorer default location setting (This PC or Quick Access).</value>
+    <value>Ajusta la vista inicial del Explorador (Este Equipo en lugar de Acceso Rápido).</value>
   </data>
   <data name="Customize.Preferences.BingSearch.Name" xml:space="preserve">
-    <value>Bing Search</value>
+    <value>Búsqueda de Bing</value>
   </data>
   <data name="Customize.Preferences.BingSearch.Description" xml:space="preserve">
-    <value>Bing web search integration in Windows Search and Start menu results.</value>
+    <value>Integración de búsqueda web en el Menú Inicio.</value>
   </data>
   <data name="Customize.Preferences.BingSearch.Recommendation.Reason" xml:space="preserve">
-    <value>Turning off Bing search prevents web queries from cluttering local search results and improves search speed.</value>
+    <value>Desactivar la búsqueda en Bing acelera el menú de inicio y evita mostrar resultados web irrelevantes cuando buscas archivos locales.</value>
   </data>
   <data name="Button.Accept" xml:space="preserve">
-    <value>Accept</value>
+    <value>Aceptar</value>
   </data>
   <data name="LegalDialog.Title" xml:space="preserve">
-    <value>Legal Agreement</value>
+    <value>Acuerdo Legal</value>
   </data>
   <data name="LegalDialog.Intro.ThankYou" xml:space="preserve">
-    <value>Thank you for choosing optimizerDuck.</value>
+    <value>Gracias por elegir optimizerDuck.</value>
   </data>
   <data name="LegalDialog.Intro.Safety" xml:space="preserve">
-    <value>To ensure transparency and your safety, optimizerDuck may adjust certain system settings and registry configurations.</value>
+    <value>Para garantizar la transparencia y tu seguridad, optimizerDuck podría ajustar ciertas configuraciones del sistema y del registro.</value>
   </data>
   <data name="LegalDialog.Intro.Review" xml:space="preserve">
-    <value>Please take a moment to review the following documents. By continuing, you agree to these terms.</value>
+    <value>Por favor, tómate un momento para revisar los siguientes documentos. Al continuar, aceptas estos términos.</value>
   </data>
   <data name="LegalDialog.Link.TermsOfService" xml:space="preserve">
-    <value>Terms of Service</value>
+    <value>Términos de Servicio</value>
   </data>
   <data name="LegalDialog.Link.PrivacyPolicy" xml:space="preserve">
-    <value>Privacy Policy</value>
+    <value>Política de Privacidad</value>
   </data>
   <data name="LegalDialog.Link.Disclaimer" xml:space="preserve">
-    <value>Disclaimer</value>
+    <value>Descargo de Responsabilidad</value>
   </data>
   <data name="LegalDialog.Warning.Title" xml:space="preserve">
-    <value>Use at your own risk</value>
+    <value>Úsalo bajo tu propio riesgo</value>
   </data>
   <data name="LegalDialog.Warning.Message" xml:space="preserve">
-    <value>We recommend creating a backup before applying any changes.</value>
+    <value>Recomendamos encarecidamente crear una copia de seguridad antes de aplicar cualquier cambio.</value>
   </data>
   <data name="Dialog.PendingChanges.Title" xml:space="preserve">
-    <value>Apply Changes</value>
+    <value>Aplicar Cambios</value>
   </data>
   <data name="Dialog.PendingChanges.Content" xml:space="preserve">
-    <value>Some changes require a restart to take effect. What would you like to do before exiting?</value>
+    <value>Algunos cambios requieren reiniciar el sistema para tener efecto. ¿Qué te gustaría hacer antes de salir?</value>
   </data>
   <data name="Dialog.PendingChanges.CloseButton" xml:space="preserve">
-    <value>Exit Anyway</value>
+    <value>Salir Igualmente</value>
   </data>
   <data name="Dialog.PendingChanges.PrimaryButton" xml:space="preserve">
-    <value>Restart PC</value>
+    <value>Reiniciar PC</value>
   </data>
   <data name="Dialog.PendingChanges.SecondaryButton" xml:space="preserve">
-    <value>Restart Explorer</value>
+    <value>Reiniciar Explorador</value>
   </data>
   <data name="Settings.About.Documentation.Title" xml:space="preserve">
-    <value>Documentation</value>
+    <value>Documentación</value>
   </data>
   <data name="Settings.About.Documentation.Description" xml:space="preserve">
-    <value>View documentation, usage guides, and FAQs.</value>
+    <value>Mira la documentación, guías de uso y preguntas frecuentes.</value>
   </data>
   <data name="TitleBar.Support" xml:space="preserve">
-    <value>Support the Project</value>
+    <value>Apoyar el Proyecto</value>
   </data>
   <data name="TitleBar.Discord" xml:space="preserve">
-    <value>Join the Discord community</value>
+    <value>Únete a la comunidad de Discord</value>
   </data>
 </root>

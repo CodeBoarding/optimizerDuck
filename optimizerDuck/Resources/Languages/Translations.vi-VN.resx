@@ -433,8 +433,11 @@
   <data name="Service.Service.Error.NotFound" xml:space="preserve">
     <value>Không tìm thấy dịch vụ</value>
   </data>
-  <data name="Service.Service.Error.UpdateRegistryForStartupTypeFailed" xml:space="preserve">
-    <value>Không thể cập nhật registry cho kiểu khởi động</value>
+  <data name="Service.Service.Info.SkippedNotFound" xml:space="preserve">
+    <value>Không tìm thấy dịch vụ '{0}' (đã bỏ qua)</value>
+  </data>
+  <data name="Service.Service.Error.ChangeStartupTypeFailed" xml:space="preserve">
+    <value>Không thể thay đổi kiểu khởi động cho dịch vụ</value>
   </data>
   <data name="Service.Service.Error.ChangeStartModeFailedWithCode" xml:space="preserve">
     <value>ChangeStartMode thất bại (mã: {0})</value>
@@ -638,7 +641,7 @@
     <value>Cài đặt Sơ đồ năng lượng tối ưu</value>
   </data>
   <data name="Optimizer.PowerManagement.InstallOptimizerDuckPowerPlan.ShortDescription" xml:space="preserve">
-    <value>Kích hoạt sơ đồ năng lượng đặc biệt giúp máy luôn đạt hiệu năng cao nhất. (Có thể làm tăng nhiệt độ).</value>
+    <value>Kích hoạt sơ đồ năng lượng đặc biệt giúp máy luôn đạt hiệu năng cao nhất. Cảnh báo: Có thể khiến Task Manager hiển thị sai 100% CPU trên một số hệ thống, mức sử dụng CPU thực tế không bị ảnh hưởng.</value>
   </data>
 
   <data name="Optimizer.PowerManagement.InstallOptimizerDuckPowerPlan.Progress.Importing" xml:space="preserve">

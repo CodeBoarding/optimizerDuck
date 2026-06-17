@@ -83,10 +83,9 @@ public class BloatwareService(
                 Converters = { new JsonStringEnumConverter() },
             };
 
-            var apps = JsonSerializer
-                .Deserialize<List<AppXPackage>>(result.Stdout, options)!
-                .OrderBy(a => a.Name)
-                .ToList();
+            var apps = JsonSerializer.Deserialize<List<AppXPackage>>(result.Stdout, options)!;
+
+            apps.Sort((a, b) => string.Compare(a.Name, b.Name, StringComparison.OrdinalIgnoreCase));
 
             foreach (var app in apps)
             {
@@ -342,7 +341,7 @@ public class BloatwareService(
         var baseNameWithoutQualifiers = StripKnownQualifiers(baseResourceName);
         var preferredLogicalSize = GuessLogicalBaseSize(baseNameWithoutQualifiers);
 
-        var files = Directory
+        return Directory
             .EnumerateFiles(candidateDirectory, "*.*", SearchOption.TopDirectoryOnly)
             .Where(path =>
                 SupportedImageExtensions.Contains(
@@ -360,10 +359,8 @@ public class BloatwareService(
                 );
             })
             .Select(path => new LogoVariant(path, preferredLogicalSize, includeThemeSpecific))
-            .OrderByDescending(v => v.SortScore)
-            .ToList();
-
-        return files.FirstOrDefault()?.Path;
+            .MaxBy(v => v.SortScore)
+            ?.Path;
     }
 
     private static string StripKnownQualifiers(string fileNameWithoutExtension)

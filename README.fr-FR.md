@@ -6,6 +6,8 @@
 
 **optimizerDuck est un outil d'optimisation Windows gratuit et open-source axé sur la performance, la confidentialité et la simplicité.**
 
+<a href="https://trendshift.io/repositories/36187" target="_blank"><img src="https://trendshift.io/api/badge/repositories/36187" alt="itsfatduck%2FoptimizerDuck | Trendshift" style="width: 250px; height: 55px;" width="250" height="55"/></a>
+<br>
 [![Release](https://img.shields.io/github/release/itsfatduck/optimizerDuck?color=fed114&label=Version&style=flat-square)](https://github.com/itsfatduck/optimizerDuck/releases/latest)
 [![Downloads](https://img.shields.io/github/downloads/itsfatduck/optimizerDuck/total?label=T%C3%A9l%C3%A9chargements&style=flat-square&color=lightgreen)](https://github.com/itsfatduck/optimizerDuck/releases)
 [![Stars](https://img.shields.io/endpoint?url=https://api.pinstudios.net/api/badges/stars/itsfatduck/optimizerDuck&style=flat-square)](https://github.com/itsfatduck/optimizerDuck/stargazers)
@@ -18,7 +20,7 @@
 
 **[Démarrage](https://optimizerduck.vercel.app/docs/guides/getting-started) | [Comment ça marche](https://optimizerduck.vercel.app/docs/guides/how-it-works) | [FAQ](https://optimizerduck.vercel.app/docs/faq/general)**
 
-[English](README.md) | [Tiếng Việt](README.vi.md) | [繁體中文](README.zh-TW.md) | [简体中文](README.zh-CN.md) | [Русский](README.ru-RU.md) | **Français** | [한국어](README.ko-KR.md)
+[English](README.md) | [Tiếng Việt](README.vi.md) | [繁體中文](README.zh-TW.md) | [简体中文](README.zh-CN.md) | [Русский](README.ru-RU.md) | **Français** | [한국어](README.ko-KR.md) | [Español](README.es-ES.md) | [日本語](README.ja-JP.md) | [Polski](README.pl-PL.md) | [Português (BR)](README.pt-BR.md)
 
 <details>
 <summary>⭐ Historique des étoiles</summary>
@@ -32,6 +34,14 @@ Chaque étoile aide à motiver les améliorations futures.
    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=itsfatduck/optimizerDuck&legend=top-left" />
    <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=itsfatduck/optimizerDuck&legend=top-left" />
  </picture>
+</a>
+
+<a href="https://starmapper.bruniaux.com/itsfatduck/optimizerDuck">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://starmapper.bruniaux.com/api/map-image/itsfatduck/optimizerDuck?theme=dark" />
+    <source media="(prefers-color-scheme: light)" srcset="https://starmapper.bruniaux.com/api/map-image/itsfatduck/optimizerDuck?theme=light" />
+    <img alt="StarMapper" src="https://starmapper.bruniaux.com/api/map-image/itsfatduck/optimizerDuck" />
+  </picture>
 </a>
 
 </details>
@@ -61,8 +71,12 @@ Chaque étoile aide à motiver les améliorations futures.
 > | 🇷🇺 | Russian | Русский | [Foodhead](https://github.com/Foodhead) |
 > | 🇫🇷 | French | Français | [Robocnop](https://github.com/Robocnop) |
 > | 🇰🇷 | Korean | 한국어 | [klfnn](https://github.com/klfnn) |
->
-> Vous souhaitez ajouter votre langue ? Consultez [CONTRIBUTING.md](./CONTRIBUTING.md).
+> | 🇪🇸 | Spanish | Español | [thexxtt](https://github.com/thexxtt) |
+> | 🇯🇵 | Japanese | 日本語 | [zerofrip](https://github.com/zerofrip) |
+> | 🇵🇱 | Polish | Polski | [dudus2000](https://github.com/dudus2000) |
+> | 🇧🇷 | Portugais (Brésil) | Português (Brasil) | [mhanelia](https://github.com/mhanelia) |
+
+> Vous souhaitez ajouter votre langue ? Consultez [CONTRIBUTING.md](./CONTRIBUTING.md) ([version japonaise](./CONTRIBUTING.ja-JP.md)).
 
 ---
 
@@ -128,6 +142,51 @@ Consultez la [Politique de confidentialité](./PRIVACY.md) pour plus de détails
 
 ---
 
+## FAQ
+
+### C'est sûr d'utiliser optimizerDuck ?
+
+Oui. optimizerDuck est complètement **open-source** (GPL v3), donc n'importe qui peut inspecter le code, l'auditer ou le compiler lui-même. Chaque version est compilée automatiquement par **GitHub Actions** à partir du code source public — pas de modifs cachées, pas de binaire non signé injecté après la compilation. Si tu veux, tu peux cloner le repo et builder le `.exe` toi-même avec une simple commande `dotnet build`.
+
+L'app **ne collecte rien** : pas de télémétrie, pas de données d'utilisation, pas d'infos personnelles. Voir la [Politique de confidentialité](./PRIVACY.md).
+
+### optimizerDuck améliore vraiment les perfs, réduit la latence ou accélère le réseau ?
+
+Ça peut aider. Chaque optimisation dans optimizerDuck est **tirée d'outils connus, de guides communautaires et de recommandations des fabricants** — rien n'est généré par IA, ajouté au hasard ou inventé. Chaque réglage touche un vrai paramètre que Windows configure trop prudemment par défaut (groupement des services hôtes, états d'alimentation GPU, limitation réseau, ordonnancement des processus).
+
+Y'a pas de faux hacks de registre ici, chaque modif a un but documenté et un impact réel confirmé par la communauté et les specs constructeurs.
+
+### Pourquoi Windows SmartScreen / Defender bloque le téléchargement ?
+
+Parce qu'optimizerDuck n'est pas signé numériquement — les certificats de signature de code coûtent une blinde pour un projet open-source. Quand Windows rencontre un exe non signé téléchargé depuis Internet, SmartScreen affiche un avertissement par défaut. C'est normal, ça **veut pas dire** que le fichier est dangereux.
+
+Pour passer : clique sur **"Plus d'informations" > "Exécuter quand même"**. Si tu flippes encore :
+
+- Compile le `.exe` toi-même depuis les [sources](https://github.com/itsfatduck/optimizerDuck)
+- Balance le binaire dans un sandbox en ligne comme ANY.RUN pour vérifier
+
+### Je peux annuler les changements si ça foire ?
+
+Oui. Chaque optimisation crée un fichier d'annulation avant de s'appliquer. Tu peux défaire des réglages individuels ou tout restaurer d'un clic depuis l'interface. L'app te proposera aussi de créer un point de restauration Windows avant ta première optimisation.
+
+### Ça marche sur Windows 10 et Windows 11 ?
+
+Oui. optimizerDuck supporte **Windows 10 (x64)** et **Windows 11 (x64)**.
+
+### Il faut les droits administrateur ?
+
+Oui. Comme il modifie les paramètres système et le registre Windows, il doit être lancé en mode administrateur.
+
+### Est-ce qu'optimizerDuck collecte mes données ?
+
+Non. L'app contient zéro télémétrie, zéro analytique, zéro fonction qui téléphone à la maison. Elle tourne entièrement hors ligne et n'envoie rien nulle part.
+
+### Pourquoi le Gestionnaire des tâches affiche 100 % du CPU après l'application du plan d'alimentation ? ([#29](https://github.com/itsfatduck/optimizerDuck/issues/29))
+
+Un bug d'affichage connu du Gestionnaire des tâches avec les plans non standard, il affiche incorrectement 100 % du CPU sur certains systèmes alors que la charge réelle est normale. Uniquement visuel, **n'affecte pas** les performances réelles ni la surchauffe. Si vous ne le souhaitez pas, désactivez simplement cette optimisation.
+
+---
+
 ## Détails techniques
 
 - **Framework** : WPF sur .NET 10, utilisant la bibliothèque WPF UI pour le design Fluent
@@ -150,7 +209,7 @@ Guides, détails des optimisations et conseils d'utilisation.
 
 ## Contribuer
 
-Les rapports de bugs, les nouvelles optimisations, les améliorations de documentation et les traductions sont tous les bienvenus. Consultez [CONTRIBUTING.md](./CONTRIBUTING.md).
+Les rapports de bugs, les nouvelles optimisations, les améliorations de documentation et les traductions sont tous les bienvenus. Consultez [CONTRIBUTING.md](./CONTRIBUTING.md) ([version japonaise](./CONTRIBUTING.ja-JP.md)).
 
 ---
 

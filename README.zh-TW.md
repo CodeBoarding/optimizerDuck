@@ -6,6 +6,8 @@
 
 **optimizerDuck 是一款免費、開源的 Windows 優化工具，旨在提供性能、隱私和簡單性。**
 
+<a href="https://trendshift.io/repositories/36187" target="_blank"><img src="https://trendshift.io/api/badge/repositories/36187" alt="itsfatduck%2FoptimizerDuck | Trendshift" style="width: 250px; height: 55px;" width="250" height="55"/></a>
+<br>
 [![Release](https://img.shields.io/github/release/itsfatduck/optimizerDuck?color=fed114&label=%E7%99%BC%E4%BD%88&style=flat-square)](https://github.com/itsfatduck/optimizerDuck/releases/latest)
 [![Downloads](https://img.shields.io/github/downloads/itsfatduck/optimizerDuck/total?label=%E4%B8%8B%E8%BC%89%E9%87%8F&style=flat-square&color=lightgreen)](https://github.com/itsfatduck/optimizerDuck/releases)
 [![Stars](https://img.shields.io/endpoint?url=https://api.pinstudios.net/api/badges/stars/itsfatduck/optimizerDuck&style=flat-square)](https://github.com/itsfatduck/optimizerDuck/stargazers)
@@ -18,7 +20,7 @@
 
 **[開始使用](https://optimizerduck.vercel.app/docs/guides/getting-started) | [運作原理](https://optimizerduck.vercel.app/docs/guides/how-it-works) | [常見問題](https://optimizerduck.vercel.app/docs/faq/general)**
 
-[English](README.md) | [Tiếng Việt](README.vi.md) | **繁體中文** | [简体中文](README.zh-CN.md) | [Русский](README.ru-RU.md) | [Français](README.fr-FR.md) | [한국어](README.ko-KR.md)
+[English](README.md) | [Tiếng Việt](README.vi.md) | **繁體中文** | [简体中文](README.zh-CN.md) | [Русский](README.ru-RU.md) | [Français](README.fr-FR.md) | [한국어](README.ko-KR.md) | [Español](README.es-ES.md) | [日本語](README.ja-JP.md) | [Polski](README.pl-PL.md) | [Português (BR)](README.pt-BR.md)
 
 <details>
 <summary>⭐ 星星歷史</summary>
@@ -32,6 +34,14 @@
    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=itsfatduck/optimizerDuck&legend=top-left" />
    <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=itsfatduck/optimizerDuck&legend=top-left" />
  </picture>
+</a>
+
+<a href="https://starmapper.bruniaux.com/itsfatduck/optimizerDuck">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://starmapper.bruniaux.com/api/map-image/itsfatduck/optimizerDuck?theme=dark" />
+    <source media="(prefers-color-scheme: light)" srcset="https://starmapper.bruniaux.com/api/map-image/itsfatduck/optimizerDuck?theme=light" />
+    <img alt="StarMapper" src="https://starmapper.bruniaux.com/api/map-image/itsfatduck/optimizerDuck" />
+  </picture>
 </a>
 
 </details>
@@ -61,8 +71,12 @@
 > | 🇷🇺 | Russian | Русский | [Foodhead](https://github.com/Foodhead) |
 > | 🇫🇷 | French | Français | [Robocnop](https://github.com/Robocnop) |
 > | 🇰🇷 | Korean | 한국어 | [klfnn](https://github.com/klfnn) |
->
-> 想加入您的語言嗎？請查看[貢獻指南](./CONTRIBUTING.md)。
+> | 🇪🇸 | Spanish | Español | [thexxtt](https://github.com/thexxtt) |
+> | 🇯🇵 | Japanese | 日本語 | [zerofrip](https://github.com/zerofrip) |
+> | 🇵🇱 | Polish | Polski | [dudus2000](https://github.com/dudus2000) |
+> | 🇧🇷 | 葡萄牙語（巴西） | Português (Brasil) | [mhanelia](https://github.com/mhanelia) |
+
+> 想加入您的語言嗎？請查看[貢獻指南](./CONTRIBUTING.md)（[日文版](./CONTRIBUTING.ja-JP.md)）。
 
 ---
 
@@ -128,6 +142,51 @@ optimizerDuck 提供一個統一的介面來清除多餘的東西、開啟有用
 
 ---
 
+## 常見問題
+
+### optimizerDuck 用起來安全嗎？
+
+安全。optimizerDuck 完全是**開源**的（GPL v3），意思是任何人都能檢查、審計或自己編譯原始碼。每個版本都由 **GitHub Actions** 從公開的原始碼自動建置；沒有隱藏修改，也不會在建置後塞入未簽署的執行檔。不放心的話，你也可以自己 clone 倉庫，下個 `dotnet build` 就搞定了。
+
+這支程式**不會**收集任何遙測資料、使用習慣或個人資訊。詳見[隱私權政策](./PRIVACY.md)。
+
+### optimizerDuck 真的能讓電腦變快、降低延遲或加快網路嗎？
+
+多少有幫助。optimizerDuck 裡的每個調整都**參考了知名工具、社群教學和硬體廠商的建議**，沒有什麼 AI 亂生成或瞎掰的東西。每項調整針對的都是 Windows 預設設得太保守的實際設定（比如服務主機分組、GPU 電源狀態、網路節流、行程排程）。
+
+這裡沒有那種騙人的登錄檔密技，每項改動都有憑有據，經過社群測試和廠商文件背書。
+
+### 為什麼 Windows SmartScreen / Defender 會封鎖下載？
+
+因為 optimizerDuck 沒有買代碼簽章憑證 — 那東西對開源專案來說貴到不行。Windows 從網路抓到沒簽章的執行檔，SmartScreen 預設就會跳出警告。這很正常，並**不是**說檔案有問題。
+
+要繞過的話，按 **「更多資訊」>「仍要執行」**。如果不放心：
+
+- 自己從[原始碼](https://github.com/itsfatduck/optimizerDuck)編譯 `.exe`
+- 把檔案丟到 ANY.RUN 這類線上沙箱讓它幫你驗證
+
+### 出錯了能還原嗎？
+
+可以。每項優化套用前都會先產生還原檔。你可以從介面一鍵復原單一調整，或乾脆全部復原。第一次使用前，程式也會建議你先建立 Windows 還原點。
+
+### 支援 Windows 10 和 Windows 11 嗎？
+
+支援。optimizerDuck 相容 **Windows 10 (x64)** 和 **Windows 11 (x64)**。
+
+### 需要管理員權限嗎？
+
+需要。因為它會改系統設定和 Windows 登錄檔，所以一定要用管理員權限執行。
+
+### optimizerDuck 會收集我的資料嗎？
+
+不會。這支程式完全沒有遙測、分析或回傳功能，離線就能跑，也不會送任何資料出去。
+
+### 套用電源計畫後，工作管理員顯示 100% CPU 使用率？([#29](https://github.com/itsfatduck/optimizerDuck/issues/29))
+
+工作管理員在非預設電源計畫下的已知顯示錯誤，在某些系統上錯誤顯示 100% CPU 使用率，實際負載正常。僅影響顯示，**不**影響實際效能或導致過熱。如果不希望這樣，只需關閉此優化即可。
+
+---
+
 ## 技術細節
 
 - **框架**：WPF 搭配 .NET 10，使用 WPF UI 程式庫實現 Fluent 設計
@@ -152,7 +211,7 @@ optimizerDuck 提供一個統一的介面來清除多餘的東西、開啟有用
 
 我們歡迎來自社群的任何貢獻！無論您是修復錯誤、新增最佳化項目或功能、改善文件，還是協助將應用程式翻譯成其他語言，您的支持都讓我們非常感激。
 
-如需更多資訊，請參閱 [CONTRIBUTING.md](./CONTRIBUTING.md)。
+如需更多資訊，請參閱 [CONTRIBUTING.md](./CONTRIBUTING.md)（[日文版](./CONTRIBUTING.ja-JP.md)）。
 
 ---
 

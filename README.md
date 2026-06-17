@@ -6,6 +6,8 @@
 
 **optimizerDuck is a free, open-source Windows optimization tool focused on performance, privacy, and simplicity.**
 
+<a href="https://trendshift.io/repositories/36187" target="_blank"><img src="https://trendshift.io/api/badge/repositories/36187" alt="itsfatduck%2FoptimizerDuck | Trendshift" style="width: 250px; height: 55px;" width="250" height="55"/></a>
+<br>
 [![Release](https://img.shields.io/github/release/itsfatduck/optimizerDuck?color=fed114&label=Release&style=flat-square)](https://github.com/itsfatduck/optimizerDuck/releases/latest)
 [![Downloads](https://img.shields.io/github/downloads/itsfatduck/optimizerDuck/total?label=Downloads&style=flat-square&color=lightgreen)](https://github.com/itsfatduck/optimizerDuck/releases)
 [![Stars](https://img.shields.io/endpoint?url=https://api.pinstudios.net/api/badges/stars/itsfatduck/optimizerDuck&style=flat-square)](https://github.com/itsfatduck/optimizerDuck/stargazers)
@@ -18,7 +20,7 @@
 
 **[Getting Started](https://optimizerduck.vercel.app/docs/guides/getting-started) | [How It Works](https://optimizerduck.vercel.app/docs/guides/how-it-works) | [FAQ](https://optimizerduck.vercel.app/docs/faq/general)**
 
-**English** | [Tiếng Việt](README.vi.md) | [繁體中文](README.zh-TW.md) | [简体中文](README.zh-CN.md) | [Русский](README.ru-RU.md) | [Français](README.fr-FR.md) | [한국어](README.ko-KR.md)
+**English** | [Tiếng Việt](README.vi.md) | [繁體中文](README.zh-TW.md) | [简体中文](README.zh-CN.md) | [Русский](README.ru-RU.md) | [Français](README.fr-FR.md) | [한국어](README.ko-KR.md) | [Español](README.es-ES.md) | [日本語](README.ja-JP.md) | [Polski](README.pl-PL.md) | [Português (BR)](README.pt-BR.md)
 
 <details>
 <summary>⭐ Star History</summary>
@@ -32,6 +34,14 @@ Every star helps motivate future improvements.
    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=itsfatduck/optimizerDuck&legend=top-left" />
    <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=itsfatduck/optimizerDuck&legend=top-left" />
  </picture>
+</a>
+
+<a href="https://starmapper.bruniaux.com/itsfatduck/optimizerDuck">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://starmapper.bruniaux.com/api/map-image/itsfatduck/optimizerDuck?theme=dark" />
+    <source media="(prefers-color-scheme: light)" srcset="https://starmapper.bruniaux.com/api/map-image/itsfatduck/optimizerDuck?theme=light" />
+    <img alt="StarMapper" src="https://starmapper.bruniaux.com/api/map-image/itsfatduck/optimizerDuck" />
+  </picture>
 </a>
 
 </details>
@@ -61,8 +71,12 @@ Every star helps motivate future improvements.
 > | 🇷🇺 | Russian | Русский | [Foodhead](https://github.com/Foodhead) |
 > | 🇫🇷 | French | Français | [Robocnop](https://github.com/Robocnop) |
 > | 🇰🇷 | Korean | 한국어 | [klfnn](https://github.com/klfnn) |
->
-> Want to add your language? See [CONTRIBUTING.md](./CONTRIBUTING.md).
+> | 🇪🇸 | Spanish | Español | [thexxtt](https://github.com/thexxtt) |
+> | 🇯🇵 | Japanese | 日本語 | [zerofrip](https://github.com/zerofrip) |
+> | 🇵🇱 | Polish | Polski | [dudus2000](https://github.com/dudus2000) |
+> | 🇧🇷 | Portuguese (Brazil) | Português (Brasil) | [mhanelia](https://github.com/mhanelia) |
+
+> Want to add your language? See [CONTRIBUTING.md](./CONTRIBUTING.md) ([Japanese](./CONTRIBUTING.ja-JP.md)).
 
 ---
 
@@ -128,6 +142,51 @@ See the [Privacy Policy](./PRIVACY.md) for details on our data practices.
 
 ---
 
+## FAQ
+
+### Is optimizerDuck safe to use?
+
+Yes. optimizerDuck is fully **open-source** (GPL v3), meaning anyone can inspect, audit, or build the source code themselves. Every release is built automatically by **GitHub Actions** from the public source; no hidden modifications, no unsigned binaries injected after build. If you prefer, you can clone the repo and build the `.exe` yourself with a single `dotnet build`.
+
+The app does **not** collect any telemetry, usage data, or personal information. See the [Privacy Policy](./PRIVACY.md).
+
+### Does optimizerDuck actually improve performance, reduce latency, or speed up my network?
+
+It can help. Every optimization in optimizerDuck is **researched from well-known tools, community guides, and hardware vendor recommendations**, nothing is AI-generated, blindly added, or made up. Each tweak addresses a real setting that Windows configures conservatively by default (e.g., service host grouping, GPU power states, network throttling, process scheduling).
+
+There are no fake registry hacks here, every change has a documented purpose and real-world impact backed by community testing and vendor documentation.
+
+### Why does Windows SmartScreen / Defender flag the download?
+
+optimizerDuck is not code-signed because code signing certificates are expensive for open-source projects. When Windows encounters an unsigned executable downloaded from the internet, SmartScreen displays a warning by default. This is normal and does **not** mean the file is unsafe.
+
+To bypass, click **"More info" > "Run anyway"**. If you are still concerned:
+
+- Build the `.exe` yourself from [source](https://github.com/itsfatduck/optimizerDuck)
+- Submit the binary to online sandboxes like ANY.RUN for independent verification
+
+### Can I revert changes if something goes wrong?
+
+Yes. Every optimization creates a revert file before applying. You can undo individual tweaks or roll back everything from the UI with one click. The app also suggests creating a Windows System Restore point before your first optimization.
+
+### Does this work on Windows 10 and Windows 11?
+
+Yes. optimizerDuck supports **Windows 10 (x64)** and **Windows 11 (x64)**.
+
+### Do I need administrator rights?
+
+Yes. optimizerDuck modifies system settings and the Windows registry, so it requires administrator privileges to run.
+
+### Does optimizerDuck collect my data?
+
+No. The app contains zero telemetry, analytics, or phone-home functionality. It runs entirely offline and does not send any data anywhere.
+
+### Why does Task Manager show 100% CPU after applying the power plan? ([#29](https://github.com/itsfatduck/optimizerDuck/issues/29))
+
+A known Task Manager display bug triggered by non-default power plans, it incorrectly reports 100% CPU on some systems while actual load is normal. Visual only, does **not** affect real performance or cause overheating. If unwanted, simply toggle off this optimization.
+
+---
+
 ## Technical Details
 
 - **Framework**: WPF on .NET 10, using the WPF UI library for Fluent design
@@ -150,7 +209,7 @@ Guides, optimization details, and usage tips.
 
 ## Contribute
 
-Bug reports, new optimizations, docs improvements, and translations are all welcome. See [CONTRIBUTING.md](./CONTRIBUTING.md).
+Bug reports, new optimizations, docs improvements, and translations are all welcome. See [CONTRIBUTING.md](./CONTRIBUTING.md) ([Japanese](./CONTRIBUTING.ja-JP.md)).
 
 ---
 

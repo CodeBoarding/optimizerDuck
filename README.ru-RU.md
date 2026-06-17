@@ -6,6 +6,8 @@
 
 **optimizerDuck — это бесплатный инструмент с открытым исходным кодом для оптимизации Windows, созданный для производительности, конфиденциальности и простоты.**
 
+<a href="https://trendshift.io/repositories/36187" target="_blank"><img src="https://trendshift.io/api/badge/repositories/36187" alt="itsfatduck%2FoptimizerDuck | Trendshift" style="width: 250px; height: 55px;" width="250" height="55"/></a>
+<br>
 [![Release](https://img.shields.io/github/release/itsfatduck/optimizerDuck?color=fed114&label=%D0%A0%D0%B5%D0%BB%D0%B8%D0%B7&style=flat-square)](https://github.com/itsfatduck/optimizerDuck/releases/latest)
 [![Downloads](https://img.shields.io/github/downloads/itsfatduck/optimizerDuck/total?label=%D0%A1%D0%BA%D0%B0%D1%87%D0%B8%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F&style=flat-square&color=lightgreen)](https://github.com/itsfatduck/optimizerDuck/releases)
 [![Stars](https://img.shields.io/endpoint?url=https://api.pinstudios.net/api/badges/stars/itsfatduck/optimizerDuck&style=flat-square)](https://github.com/itsfatduck/optimizerDuck/stargazers)
@@ -18,7 +20,7 @@
 
 **[Начало работы](https://optimizerduck.vercel.app/docs/guides/getting-started) | [Как это работает](https://optimizerduck.vercel.app/docs/guides/how-it-works) | [FAQ](https://optimizerduck.vercel.app/docs/faq/general)**
 
-[English](README.md) | [Tiếng Việt](README.vi.md) | [繁體中文](README.zh-TW.md) | [简体中文](README.zh-CN.md) | **Русский** | [Français](README.fr-FR.md) | [한국어](README.ko-KR.md)
+[English](README.md) | [Tiếng Việt](README.vi.md) | [繁體中文](README.zh-TW.md) | [简体中文](README.zh-CN.md) | **Русский** | [Français](README.fr-FR.md) | [한국어](README.ko-KR.md) | [Español](README.es-ES.md) | [日本語](README.ja-JP.md) | [Polski](README.pl-PL.md) | [Português (BR)](README.pt-BR.md)
 
 <details>
 <summary>⭐ История звёзд</summary>
@@ -32,6 +34,14 @@
    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=itsfatduck/optimizerDuck&legend=top-left" />
    <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=itsfatduck/optimizerDuck&legend=top-left" />
  </picture>
+</a>
+
+<a href="https://starmapper.bruniaux.com/itsfatduck/optimizerDuck">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://starmapper.bruniaux.com/api/map-image/itsfatduck/optimizerDuck?theme=dark" />
+    <source media="(prefers-color-scheme: light)" srcset="https://starmapper.bruniaux.com/api/map-image/itsfatduck/optimizerDuck?theme=light" />
+    <img alt="StarMapper" src="https://starmapper.bruniaux.com/api/map-image/itsfatduck/optimizerDuck" />
+  </picture>
 </a>
 
 </details>
@@ -61,8 +71,12 @@
 > | 🇷🇺 | Russian | Русский | [Foodhead](https://github.com/Foodhead) |
 > | 🇫🇷 | French | Français | [Robocnop](https://github.com/Robocnop) |
 > | 🇰🇷 | Korean | 한국어 | [klfnn](https://github.com/klfnn) |
->
-> Хотите добавить свой язык? См. [CONTRIBUTING.md](./CONTRIBUTING.md).
+> | 🇪🇸 | Spanish | Español | [thexxtt](https://github.com/thexxtt) |
+> | 🇯🇵 | Japanese | 日本語 | [zerofrip](https://github.com/zerofrip) |
+> | 🇵🇱 | Polish | Polski | [dudus2000](https://github.com/dudus2000) |
+> | 🇧🇷 | Португальский (Бразилия) | Português (Brasil) | [mhanelia](https://github.com/mhanelia) |
+
+> Хотите добавить свой язык? См. [CONTRIBUTING.md](./CONTRIBUTING.md) ([японская версия](./CONTRIBUTING.ja-JP.md)).
 
 ---
 
@@ -128,6 +142,51 @@ optimizerDuck даёт вам единый интерфейс, чтобы убр
 
 ---
 
+## Часто задаваемые вопросы
+
+### optimizerDuck безопасен?
+
+Да. optimizerDuck — полностью **открытый исходный код** (GPL v3), так что любой может глянуть код, проверить или сам собрать программу. Каждый релиз собирается **GitHub Actions** из публичного исходника — никаких скрытых правок, никаких левых DLL после сборки. Если сомневаетесь, клонируйте репозиторий и соберите `.exe` одной командой `dotnet build`.
+
+Приложение **вообще не собирает** телеметрию, данные об использовании или личную информацию. Подробнее в [Политике конфиденциальности](./PRIVACY.md).
+
+### optimizerDuck правда ускоряет систему, снижает лаги или разгоняет сеть?
+
+Может помочь. Каждая оптимизация в optimizerDuck **взята из известных утилит, гайдов сообщества и рекомендаций производителей** — ничего не сгенерировано ИИ, не добавлено наобум и не выдумано. Каждая настройка меняет реальный параметр, который Windows по умолчанию ставит слишком консервативно (например, группировку служб, питание GPU, ограничение сети, планировку процессов).
+
+Никаких фейковых хаков в реестре, каждая правка имеет смысл и подтверждена тестами сообщества и документацией вендоров.
+
+### Почему Windows SmartScreen / Defender ругается при скачивании?
+
+Потому что у optimizerDuck нет цифровой подписи — сертификаты подписи кода стоят бешеных денег для open-source проектов. Когда Windows видит неподписанный exe, скачанный из интернета, SmartScreen по умолчанию паникует. Это нормально, и это **не** значит, что файл опасен.
+
+Чтобы запустить, нажмите **"Подробнее" > "Выполнить в любом случае"**. Если всё ещё сомневаетесь:
+
+- Соберите `.exe` сами из [исходников](https://github.com/itsfatduck/optimizerDuck)
+- Закиньте файл в ANY.RUN или другой online-песочник для проверки
+
+### Можно ли откатить изменения, если что-то пошло не так?
+
+Да. Каждая оптимизация перед применением создаёт файл отката. Можно отменить отдельные настройки или сбросить всё одной кнопкой в интерфейсе. Ещё программа предложит создать точку восстановления Windows перед первой оптимизацией.
+
+### Работает на Windows 10 и Windows 11?
+
+Да. optimizerDuck поддерживает **Windows 10 (x64)** и **Windows 11 (x64)**.
+
+### Нужны права админа?
+
+Да. Программа лезет в системные настройки и реестр Windows, так что без администраторских прав никак.
+
+### optimizerDuck собирает мои данные?
+
+Нет. В приложении нет ни телеметрии, ни аналитики, ни «звонков домой». Оно работает полностью офлайн и никуда ничего не шлёт.
+
+### Почему Диспетчер задач показывает 100% ЦП после применения схемы питания? ([#29](https://github.com/itsfatduck/optimizerDuck/issues/29))
+
+Известная ошибка отображения Диспетчера задач при нестандартных схемах питания, неверно показывает 100% ЦП на некоторых системах при нормальной реальной нагрузке. Только визуально, **не** влияет на производительность и не вызывает перегрев. Если не нужно, просто отключите эту оптимизацию.
+
+---
+
 ## Технические детали
 
 - **Фреймворк**: WPF на .NET 10, с использованием библиотеки WPF UI для дизайна Fluent
@@ -152,7 +211,7 @@ optimizerDuck даёт вам единый интерфейс, чтобы убр
 
 Мы приветствуем вклад сообщества! Будь то исправление ошибок, добавление новых оптимизаций или функций, улучшение документации или помощь в переводе приложения на другие языки — ваша поддержка очень ценится.
 
-Для получения дополнительной информации см. [CONTRIBUTING.md](./CONTRIBUTING.md).
+Для получения дополнительной информации см. [CONTRIBUTING.md](./CONTRIBUTING.md) ([японская версия](./CONTRIBUTING.ja-JP.md)).
 
 ---
 
