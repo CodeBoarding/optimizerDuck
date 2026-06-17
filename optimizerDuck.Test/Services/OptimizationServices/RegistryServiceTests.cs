@@ -268,15 +268,12 @@ public class RegistryServiceTests : IDisposable
             var value = $"Value{i}";
 
             tasks.Add(
-                Task.Run(
-                    () =>
-                    {
-                        Assert.True(RegistryService.Write(new RegistryItem(key, "Value", value)));
-                        var read = RegistryService.Read<string>(new RegistryItem(key, "Value"));
-                        Assert.Equal(value, read);
-                    },
-                    TestContext.Current.CancellationToken
-                )
+                Task.Run(() =>
+                {
+                    Assert.True(RegistryService.Write(new RegistryItem(key, "Value", value)));
+                    var read = RegistryService.Read<string>(new RegistryItem(key, "Value"));
+                    Assert.Equal(value, read);
+                })
             );
         }
 

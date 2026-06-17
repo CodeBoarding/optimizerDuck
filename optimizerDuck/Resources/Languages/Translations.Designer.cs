@@ -4413,20 +4413,11 @@ namespace optimizerDuck.Resources.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Service '{0}' not found (skipped).
+        ///   Looks up a localized string similar to Failed to update registry for startup type.
         /// </summary>
-        internal static string Service_Service_Info_SkippedNotFound {
+        internal static string Service_Service_Error_UpdateRegistryForStartupTypeFailed {
             get {
-                return ResourceManager.GetString("Service.Service.Info.SkippedNotFound", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Failed to change startup type for service.
-        /// </summary>
-        internal static string Service_Service_Error_ChangeStartupTypeFailed {
-            get {
-                return ResourceManager.GetString("Service.Service.Error.ChangeStartupTypeFailed", resourceCulture);
+                return ResourceManager.GetString("Service.Service.Error.UpdateRegistryForStartupTypeFailed", resourceCulture);
             }
         }
         

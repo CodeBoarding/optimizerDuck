@@ -56,7 +56,7 @@ public class ScopeBlockTextFormatter : ITextFormatter
         };
 
         //var prefix = $"{timestamp} | {ctx,-67} | {levelText,-7} | "; // byebye 67 char SourceContext truncation, we have a new design now...
-        var prefix = $"{timestamp} | {ctx, -35} | {levelText, -7} | ";
+        var prefix = $"{timestamp} | {ctx,-35} | {levelText,-7} | ";
 
         // print message
         output.WriteLine(prefix + RenderWithoutQuotes(logEvent));
@@ -141,10 +141,8 @@ public partial class App : Application
     {
         base.OnStartup(e);
 
-        AppDomain.CurrentDomain.UnhandledException += OnUnhandledException;
-        TaskScheduler.UnobservedTaskException += OnUnobservedTaskException;
-        DispatcherUnhandledException += OnDispatcherUnhandledException;
-
+        // Run initialization in a background task to keep UI responsive if needed,
+        // but since we need the MainWindow to show, we'll await the async part.
         _ = Task.Run(async () =>
         {
             try
@@ -158,67 +156,8 @@ public partial class App : Application
         });
     }
 
-    private void OnUnhandledException(object sender, UnhandledExceptionEventArgs e)
-    {
-        var ex = e.ExceptionObject as Exception ?? new Exception(e.ExceptionObject?.ToString());
-        LogExceptionToFile("AppDomain.UnhandledException", ex);
-        Log.Logger?.Fatal(
-            ex,
-            "Unhandled AppDomain exception. IsTerminating={IsTerminating}",
-            e.IsTerminating
-        );
-    }
-
-    private void OnUnobservedTaskException(object? sender, UnobservedTaskExceptionEventArgs e)
-    {
-        LogExceptionToFile("UnobservedTaskException", e.Exception);
-        Log.Logger?.Error(e.Exception, "Unobserved task exception");
-        e.SetObserved();
-    }
-
-    private void OnDispatcherUnhandledException(
-        object sender,
-        System.Windows.Threading.DispatcherUnhandledExceptionEventArgs e
-    )
-    {
-        LogExceptionToFile("DispatcherUnhandledException", e.Exception);
-        Log.Logger?.Error(e.Exception, "Unhandled UI dispatcher exception");
-        e.Handled = true;
-    }
-
-    private static void LogExceptionToFile(string category, Exception ex)
-    {
-        try
-        {
-            var crashDir = Path.Combine(Shared.RootDirectory, "Crashes");
-            Directory.CreateDirectory(crashDir);
-            var crashFile = Path.Combine(
-                crashDir,
-                $"crash_{DateTime.Now:yyyy-MM-dd_HH-mm-ss-fff}.log"
-            );
-            File.WriteAllText(
-                crashFile,
-                $"""
-                [{category}] {DateTime.Now:yyyy-MM-dd HH:mm:ss.fff}
-                Type: {ex.GetType().FullName}
-                Message: {ex.Message}
-                StackTrace:
-                {ex.StackTrace}
-
-                {(ex.InnerException is not null ? $"Inner: {ex.InnerException}" : "")}
-                """
-            );
-        }
-        catch
-        {
-            // cannot do anything if crash logging itself fails
-        }
-    }
-
     private async Task HandleStartupErrorAsync(Exception ex)
     {
-        LogExceptionToFile("App.Startup", ex);
-
         try
         {
             Log.Logger?.Fatal(ex, "Fatal error during startup");
@@ -395,22 +334,24 @@ public partial class App : Application
         optimizationRegistry.StartPreload();
     }
 
-    protected override async void OnExit(ExitEventArgs e)
+    protected override void OnExit(ExitEventArgs e)
     {
         try
         {
             if (_host != null)
             {
-                await _host.StopAsync();
+                _host.StopAsync().GetAwaiter().GetResult();
                 _host.Dispose();
             }
 
+            // Dispose WMI scopes to prevent resource leaks
             WmiHelper.DisposeScopes();
+
             Log.CloseAndFlush();
         }
-        catch (Exception ex)
+        catch
         {
-            LogExceptionToFile("App.OnExit", ex);
+            // Silently ignore exit errors to prevent blocking shutdown
         }
 
         base.OnExit(e);

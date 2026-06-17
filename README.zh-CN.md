@@ -6,8 +6,6 @@
 
 **optimizerDuck 是一款免费开源的 Windows 优化工具，主打性能提升、隐私保护与简洁易用。**
 
-<a href="https://trendshift.io/repositories/36187" target="_blank"><img src="https://trendshift.io/api/badge/repositories/36187" alt="itsfatduck%2FoptimizerDuck | Trendshift" style="width: 250px; height: 55px;" width="250" height="55"/></a>
-<br>
 [![Release](https://img.shields.io/github/release/itsfatduck/optimizerDuck?color=fed114&label=%E5%8F%91%E5%B8%83&style=flat-square)](https://github.com/itsfatduck/optimizerDuck/releases/latest)
 [![Downloads](https://img.shields.io/github/downloads/itsfatduck/optimizerDuck/total?label=%E4%B8%8B%E8%BD%BD%E9%87%8F&style=flat-square&color=lightgreen)](https://github.com/itsfatduck/optimizerDuck/releases)
 [![Stars](https://img.shields.io/endpoint?url=https://api.pinstudios.net/api/badges/stars/itsfatduck/optimizerDuck&style=flat-square)](https://github.com/itsfatduck/optimizerDuck/stargazers)
@@ -20,7 +18,7 @@
 
 **[快速上手](https://optimizerduck.vercel.app/docs/guides/getting-started) | [工作原理](https://optimizerduck.vercel.app/docs/guides/how-it-works) | [常见问题](https://optimizerduck.vercel.app/docs/faq/general)**
 
-[English](README.md) | [Tiếng Việt](README.vi.md) | [繁體中文](README.zh-TW.md) | **简体中文** | [Русский](README.ru-RU.md) | [Français](README.fr-FR.md) | [한국어](README.ko-KR.md) | [Español](README.es-ES.md) | [日本語](README.ja-JP.md) | [Polski](README.pl-PL.md) | [Português (BR)](README.pt-BR.md)
+[English](README.md) | [Tiếng Việt](README.vi.md) | [繁體中文](README.zh-TW.md) | **简体中文** | [Русский](README.ru-RU.md) | [Français](README.fr-FR.md) | [한국어](README.ko-KR.md)
 
 <details>
 <summary>⭐ 项目星标趋势</summary>
@@ -36,14 +34,6 @@
  </picture>
 </a>
 
-<a href="https://starmapper.bruniaux.com/itsfatduck/optimizerDuck">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://starmapper.bruniaux.com/api/map-image/itsfatduck/optimizerDuck?theme=dark" />
-    <source media="(prefers-color-scheme: light)" srcset="https://starmapper.bruniaux.com/api/map-image/itsfatduck/optimizerDuck?theme=light" />
-    <img alt="StarMapper" src="https://starmapper.bruniaux.com/api/map-image/itsfatduck/optimizerDuck" />
-  </picture>
-</a>
-
 </details>
 
 <img src="./.github/assets/app.png" alt="optimizerDuck 深色模式" title="optimizerDuck 深色模式" width="800"/>
@@ -56,7 +46,7 @@
 
 1. 前往 **[GitHub Releases](https://github.com/itsfatduck/optimizerDuck/releases/latest)** 下载
 2. 直接运行 `.exe` 程序，**无需安装**
-3. 挑选要应用的优化项目，应用后重启电脑
+3. 挑选要应用的优化项目，套用后重启电脑
 
 > [!TIP]
 > 修改系统设置前，建议**手动创建系统还原点**。
@@ -64,27 +54,21 @@
 > [!NOTE]
 > | | 语言 | 原始名称 | 翻译者 |
 > |------|----------|-------------|------------|
-> | 🇺🇸 | English (United States) | English | 原创团队<sup>1</sup> |
+> | 🇺🇸 | English (United States) | English | 主要及推荐 |
 > | 🇻🇳 | Vietnamese | Tiếng Việt | [itsfatduck](https://github.com/itsfatduck) |
 > | 🇹🇼 | Traditional Chinese | 正體中文 | [abc0922001](https://github.com/abc0922001) |
 > | 🇨🇳 | Simplified Chinese | 简体中文 | [wcxu21](https://github.com/wcxu21) |
 > | 🇷🇺 | Russian | Русский | [Foodhead](https://github.com/Foodhead) |
 > | 🇫🇷 | French | Français | [Robocnop](https://github.com/Robocnop) |
 > | 🇰🇷 | Korean | 한국어 | [klfnn](https://github.com/klfnn) |
-> | 🇪🇸 | Spanish | Español | [thexxtt](https://github.com/thexxtt) |
-> | 🇯🇵 | Japanese | 日本語 | [zerofrip](https://github.com/zerofrip) |
-> | 🇵🇱 | Polish | Polski | [dudus2000](https://github.com/dudus2000) |
-> | 🇧🇷 | 葡萄牙语（巴西） | Português (Brasil) | [mhanelia](https://github.com/mhanelia) |
-
-> 想要添加其他语言？请查看[贡献指南](./CONTRIBUTING.md)（[日文版](./CONTRIBUTING.ja-JP.md)）。
 >
-> 1: 软件开发时使用此语言，我们也推荐使用此语言以尽可能避免误解。
+> 想要添加其他语言？请查看[贡献指南](./CONTRIBUTING.md)。
 
 ---
 
 ## optimizerDuck 做什么
 
-Windows 本身非常稳定。但即便是“全新安装”，也会附带一些你可能从未听过的服务、遥测、预装应用和计划任务 — 全部在后台静静运行，消耗你的 CPU、内存和磁盘。同时，一些能帮你榨干硬件性能的功能却没有默认开启。
+Windows 本身非常稳定。但全新安装时，也会附带一些你可能从未听过的服务、遥测、预装应用和计划任务 — 全部在后台静静运行，消耗你的 CPU、内存和磁盘。同时，一些能帮你榨干硬件性能的功能却没有默认开启。
 
 optimizerDuck 提供一个统一的界面来清除多余的东西、开启有用的功能。
 
@@ -107,7 +91,7 @@ optimizerDuck 提供一个统一的界面来清除多余的东西、开启有用
 | **使用体验**       | 移除菜单显示延迟、关闭任务栏动画和透明度等视觉效果，让系统响应更迅速                                    |
 
 > [!NOTE]
-> 这里的优化皆来自知名工具与大量用户的经验 — 没有 AI 自动生成或盲目添加的项目，每一项调整都是根据实际效果挑选。
+> 这里的优化皆来自知名工具与大量用户的经验 — 没有 AI 自动生成或盲目添加的项目。每一项调整都是根据实际效果挑选。
 
 ### 自定义设置
 
@@ -144,51 +128,6 @@ optimizerDuck 提供一个统一的界面来清除多余的东西、开启有用
 
 ---
 
-## 常见问题
-
-### optimizerDuck 用起来安全吗？
-
-安全的。optimizerDuck 完全**开源**（GPL v3），谁都可以检查、审计或自己编译源码。每个版本都由 **GitHub Actions** 从公开源码自动构建，没有隐藏修改，也不会在构建后塞入未签名的文件。不放心的话，你也可以自己 clone 仓库，一条 `dotnet build` 命令就搞定。
-
-这个程序**不会**收集任何遥测、使用数据或个人隐私。详见[隐私政策](./PRIVACY.md)。
-
-### optimizerDuck 真能提升性能、降低延迟或加速网络吗？
-
-多少有点用。optimizerDuck 里的每个优化都**参考了知名工具、社区教程和硬件厂商的建议**，不是什么 AI 瞎编或乱加的东西。每个调整针对的都是 Windows 默认设置得过于保守的实际项（比如服务主机分组、GPU 电源状态、网络限制、进程调度）。
-
-这里没有那种骗人的注册表技巧，每个改动都有根有据，经过社区测试和厂商文档验证。
-
-### 为什么 Windows SmartScreen / Defender 会拦截下载？
-
-因为 optimizerDuck 没有买代码签名证书 — 那玩意儿对开源项目来说太贵了。Windows 从网上下载到没有签名的 exe，SmartScreen 默认就会弹警告。这很正常，并**不是**说文件有问题。
-
-要跳过的话，点 **"更多信息" > "仍要运行"**。如果还是不放心：
-
-- 自己从[源码](https://github.com/itsfatduck/optimizerDuck)编译 `.exe`
-- 把文件丢到 ANY.RUN 这类在线沙箱去验证
-
-### 出错了能还原吗？
-
-能。每个优化应用前都会生成还原文件。你可以从界面上单个撤销，也能一键全部回滚。首次优化前程序也会建议你创建 Windows 还原点。
-
-### 支持 Windows 10 和 Windows 11 吗？
-
-支持。optimizerDuck 兼容 **Windows 10 (x64)** 和 **Windows 11 (x64)**。
-
-### 需要管理员权限吗？
-
-需要。因为它要改系统设置和 Windows 注册表，所以必须以管理员权限运行。
-
-### optimizerDuck 会收集我的数据吗？
-
-不会。这个程序没有任何遥测、分析或回传功能，完全离线运行，啥数据也不会发出去。
-
-### 应用电源计划后，任务管理器显示 100% CPU 使用率？([#29](https://github.com/itsfatduck/optimizerDuck/issues/29))
-
-任务管理器在非默认电源计划下的已知显示错误，在某些系统上错误显示 100% CPU 使用率，实际负载正常。仅影响显示，**不**影响实际性能或导致过热。如果不希望这样，只需关闭此优化。
-
----
-
 ## 技术细节
 
 - **框架**：WPF 搭配 .NET 10，使用 WPF UI 库实现 Fluent 设计
@@ -201,13 +140,11 @@ optimizerDuck 提供一个统一的界面来清除多余的东西、开启有用
 
 ---
 
-## 文档
+## 官方文档
 
-**访问[官方文档](https://optimizerduck.vercel.app/docs/guides/getting-started)！<sup>2</sup>**
+### [使用文档中心](https://optimizerduck.vercel.app/docs/guides/getting-started)
 
-官方文档中包含分步教程、每项优化的详细说明，以及使用 optimizerDuck 的最佳实践。
-
-> 2: _官方文档部署在Vercel(截止到2026年6月3日)，因此可能需要网络优化来访问。_
+包含分步教程、每项优化的详细说明，以及使用 optimizerDuck 的最佳实践。
 
 ---
 
@@ -215,7 +152,7 @@ optimizerDuck 提供一个统一的界面来清除多余的东西、开启有用
 
 我们欢迎来自社区的每一份贡献！无论你是修复 bug、添加新的优化或功能、完善文档，还是协助将应用翻译成其他语言，你的支持都让我们非常感激。
 
-如需更多信息，请查阅 [CONTRIBUTING.md](./CONTRIBUTING.md)（[日文版](./CONTRIBUTING.ja-JP.md)）。
+如需更多信息，请查阅 [CONTRIBUTING.md](./CONTRIBUTING.md)。
 
 ---
 
@@ -250,10 +187,10 @@ optimizerDuck 按**现状原样**提供，不附带任何形式的保证。
 
 使用本工具即表示你同意：项目作者不对系统不稳定、数据丢失、第三方软件冲突或用户自行修改操作引发的任何问题承担责任。
 
-为保护你的数据安全，修改系统前请务必**创建系统还原点**并备份重要资料。
+修改系统前请务必**创建系统还原点**并备份重要资料。
 
 > [!NOTE]
-> 本工具会修改系统设置与 Windows 注册表。使用时**风险自负**。
+> 本工具会修改系统设置与 Windows 注册表。使用风险自负。
 > 建议提前备份数据并创建系统还原点，避免意外情况。
 >
 > 详细条款请查阅：[服务条款](./TERMS.md)、[隐私政策](./PRIVACY.md)、[免责声明](./DISCLAIMER.md)

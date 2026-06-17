@@ -436,11 +436,8 @@
   <data name="Service.Service.Error.NotFound" xml:space="preserve">
     <value>Служба не найдена</value>
   </data>
-  <data name="Service.Service.Info.SkippedNotFound" xml:space="preserve">
-    <value>Служба '{0}' не найдена (пропущена)</value>
-  </data>
-  <data name="Service.Service.Error.ChangeStartupTypeFailed" xml:space="preserve">
-    <value>Не удалось изменить тип запуска службы</value>
+  <data name="Service.Service.Error.UpdateRegistryForStartupTypeFailed" xml:space="preserve">
+    <value>Не удалось обновить реестр для типа запуска</value>
   </data>
   <data name="Service.Service.Error.ChangeStartModeFailedWithCode" xml:space="preserve">
     <value>Сбой ChangeStartMode (код: {0})</value>
@@ -659,7 +656,7 @@
     <value>Применить оптимизированную схему питания</value>
   </data>
   <data name="Optimizer.PowerManagement.InstallOptimizerDuckPowerPlan.ShortDescription" xml:space="preserve">
-    <value>Устанавливает пользовательскую схему питания, ориентированную на максимальную производительность. Предупреждение: Может вызвать некорректное отображение 100% загрузки ЦП в Диспетчере задач на некоторых системах, фактическая нагрузка не изменяется.</value>
+    <value>Устанавливает пользовательскую схему питания, ориентированную на максимальную производительность.</value>
   </data>
 
   <data name="Optimizer.PowerManagement.InstallOptimizerDuckPowerPlan.Progress.Importing" xml:space="preserve">

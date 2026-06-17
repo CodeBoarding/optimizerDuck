@@ -98,26 +98,22 @@ public static class EmbeddedResourceHelper
     /// Gets all available embedded resources in the optimizerDuck.Resources.Embedded namespace.
     /// </summary>
     /// <returns>Enumerable of resource names with the namespace prefix removed.</returns>
-    private static readonly string[] _cachedResourceNames = Assembly
-        .GetExecutingAssembly()
-        .GetManifestResourceNames();
-
-    private static readonly HashSet<string> _cachedResourceSet = new(
-        _cachedResourceNames,
-        StringComparer.Ordinal
-    );
-
     public static IEnumerable<string> GetAvailableResources()
     {
+        var assembly = Assembly.GetExecutingAssembly();
         var prefix = $"{ResourceNamespace}.";
 
-        return _cachedResourceNames
+        return assembly
+            .GetManifestResourceNames()
             .Where(name => name.StartsWith(prefix, StringComparison.Ordinal))
             .Select(name => name.Substring(prefix.Length));
     }
 
+    /// <summary>
+    /// Checks if a specific resource exists in the assembly.
+    /// </summary>
     private static bool ResourceExists(Assembly assembly, string resourceName)
     {
-        return _cachedResourceSet.Contains(resourceName);
+        return assembly.GetManifestResourceNames().Contains(resourceName);
     }
 }
