@@ -18,6 +18,7 @@ jobs:
     timeout-minutes: 60
     permissions:
       contents: read
+      id-token: write
       pull-requests: write
       issues: write
     if: >
@@ -26,17 +27,6 @@ jobs:
        startsWith(github.event.comment.body, '/codeboarding') &&
        contains(fromJSON('["OWNER","MEMBER","COLLABORATOR"]'), github.event.comment.author_association))
     steps:
-      - name: Verify Google API key secret is available
-        shell: bash
-        env:
-          GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
-        run: |
-          if [ -z "${GOOGLE_API_KEY}" ]; then
-            echo "::error::GOOGLE_API_KEY secret is missing or empty."
-            exit 1
-          fi
-          echo "GOOGLE_API_KEY secret is present."
-
       - uses: CodeBoarding/CodeBoarding-action@fix/review-target-baseline
         with:
           llm_provider: google
