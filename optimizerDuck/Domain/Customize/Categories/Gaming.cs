@@ -172,7 +172,8 @@ public class Gaming : ICustomizeCategory
     {
         private const string Path = @"HKCU\Control Panel\Mouse";
 
-        protected override CustomizeRefreshScope RefreshScope => CustomizeRefreshScope.PolicyUpdate;
+        protected override CustomizeRefreshScope RefreshScope =>
+            CustomizeRefreshScope.PolicyUpdate;
 
         protected override IReadOnlyList<string> GetWatchedRegistryPaths() => [Path];
 

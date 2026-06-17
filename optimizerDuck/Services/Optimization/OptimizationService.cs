@@ -14,6 +14,7 @@ using optimizerDuck.UI.Dialogs;
 using optimizerDuck.UI.ViewModels.Dialogs;
 using Wpf.Ui;
 using Wpf.Ui.Controls;
+using optimizerDuck.UI.Controls;
 
 namespace optimizerDuck.Services;
 
@@ -28,23 +29,17 @@ public class OptimizationService(
 {
     private readonly ILogger _logger = logger;
 
-    /// <summary>Gets or sets a value that indicates whether a system restore point was created before applying optimizations.</summary>
     public bool WasRequestedRestorePoint { get; set; } = false;
 
-    private static readonly Regex _restorePointDisabledRegex = new(
-        @"\b(is\s+disabled|system\s+restore\s+is\s+disabled|disabled\s+by\s+group\s+policy|disableconfig|disablesr|protection\s+is\s+off)\b",
-        RegexOptions.IgnoreCase | RegexOptions.CultureInvariant | RegexOptions.Compiled
-    );
-
-    /// <summary>Creates a system restore point via PowerShell, showing a processing dialog. Enables System Protection if it is disabled.</summary>
-    /// <returns>A <see cref="RestorePointResult"/> indicating success, failure, or frequency-limit reached.</returns>
     public async Task<RestorePointResult> CreateRestorePointAsync()
     {
         var dialogViewModel = new ProcessingViewModel();
+        var dialogContent = new ProcessingDialog { DataContext = dialogViewModel };
+
         var dialog = new ContentDialog
         {
             Title = Translations.RestorePoint_Title,
-            Content = new ProcessingDialog { DataContext = dialogViewModel },
+            Content = dialogContent,
             IsFooterVisible = false,
         };
 
@@ -66,25 +61,33 @@ public class OptimizationService(
                 $"Checkpoint-Computer -Description \"{Shared.RestorePointName}\" -RestorePointType MODIFY_SETTINGS"
             );
 
-            if (IsFrequencyLimited(result.Stderr))
+            if (
+                result.Stderr.Contains(
+                    "already been created within the past",
+                    StringComparison.OrdinalIgnoreCase
+                )
+            )
             {
                 _logger.LogWarning("Restore point creation skipped: frequency limit reached.");
                 return RestorePointResult.FrequencyLimitReached;
             }
 
             if (result.ExitCode == 0)
-            {
-                _logger.LogInformation("Restore point created successfully.");
                 return RestorePointResult.Success;
-            }
 
-            if (!_restorePointDisabledRegex.IsMatch(result.Stderr))
+            if (
+                !Regex.IsMatch(
+                    result.Stderr,
+                    @"\b(is\s+disabled|system\s+restore\s+is\s+disabled|disabled\s+by\s+group\s+policy|disableconfig|disablesr|protection\s+is\s+off)\b",
+                    RegexOptions.IgnoreCase | RegexOptions.CultureInvariant
+                )
+            )
             {
                 _logger.LogError("Failed to create restore point: {Message}", result.Stderr);
                 return RestorePointResult.Failed;
             }
 
-            _logger.LogInformation("System Protection is disabled. Enabling...");
+            _logger.LogInformation("Enabling System Protection...");
             dialogViewModel.ProgressReporter.Report(
                 new ProcessingProgress
                 {
@@ -96,7 +99,6 @@ public class OptimizationService(
             var enableResult = await ShellService.PowerShellAsync(
                 "Enable-ComputerRestore -Drive \"$env:SystemDrive\""
             );
-
             if (enableResult.ExitCode != 0)
             {
                 _logger.LogError(
@@ -118,7 +120,12 @@ public class OptimizationService(
                 $"Checkpoint-Computer -Description \"{Shared.RestorePointName}\" -RestorePointType MODIFY_SETTINGS"
             );
 
-            if (IsFrequencyLimited(result.Stderr))
+            if (
+                result.Stderr.Contains(
+                    "already been created within the past",
+                    StringComparison.OrdinalIgnoreCase
+                )
+            )
                 return RestorePointResult.FrequencyLimitReached;
 
             return result.ExitCode == 0 ? RestorePointResult.Success : RestorePointResult.Failed;
@@ -129,19 +136,6 @@ public class OptimizationService(
         }
     }
 
-    private static bool IsFrequencyLimited(string? stderr)
-    {
-        return stderr?.Contains(
-                "already been created within the past",
-                StringComparison.OrdinalIgnoreCase
-            ) == true;
-    }
-
-    /// <summary>Applies the specified optimization, captures revert steps into an execution scope, and persists revert data on any successful steps.</summary>
-    /// <param name="optimization">The optimization to apply.</param>
-    /// <param name="progress">An <see cref="IProgress{T}"/> to report application progress.</param>
-    /// <param name="cancellationToken">A token to cancel the operation.</param>
-    /// <returns>An <see cref="OptimizationResult"/> describing the outcome, including partial-success or failure details.</returns>
     public async Task<OptimizationResult> ApplyAsync(
         IOptimization optimization,
         IProgress<ProcessingProgress> progress,
@@ -225,11 +219,6 @@ public class OptimizationService(
         }
     }
 
-    /// <summary>Reverts the specified optimization using stored revert data from a previous apply operation.</summary>
-    /// <param name="optimization">The optimization to revert.</param>
-    /// <param name="progress">An optional <see cref="IProgress{T}"/> to report revert progress.</param>
-    /// <param name="cancellationToken">A token to cancel the operation.</param>
-    /// <returns>A <see cref="RevertResult"/> describing the outcome.</returns>
     public async Task<RevertResult> RevertAsync(
         IOptimization optimization,
         IProgress<ProcessingProgress>? progress = null,
@@ -256,8 +245,6 @@ public class OptimizationService(
         return result;
     }
 
-    /// <summary>Updates the applied state of the specified optimizations by scanning revert data files on disk. An optimization is considered applied when its revert JSON file exists.</summary>
-    /// <param name="optimizations">The optimizations whose state to update.</param>
     public static async Task UpdateOptimizationStateAsync(params IOptimization[] optimizations)
     {
         if (optimizations.Length == 0)
@@ -294,22 +281,11 @@ public class OptimizationService(
         }
     }
 
-    /// <summary>Updates the applied state of the specified optimizations by scanning revert data files on disk.</summary>
-    /// <param name="optimizations">The optimizations whose state to update.</param>
     public static Task UpdateOptimizationStateAsync(IEnumerable<IOptimization> optimizations)
     {
         return UpdateOptimizationStateAsync(optimizations.ToArray());
     }
 
-    /// <summary>Retries the specified failed operation steps, optionally in reverse order. Automatically persists recovered revert steps if a <see cref="RevertManager"/> is provided.</summary>
-    /// <param name="failedSteps">The steps that failed and should be retried.</param>
-    /// <param name="reverseOrder">If <see langword="true"/>, retries steps in descending index order (useful for revert operations).</param>
-    /// <param name="logger">The logger for retry diagnostics.</param>
-    /// <param name="revertManager">Optional revert manager to persist recovered revert steps.</param>
-    /// <param name="optimizationId">The optimization ID for revert step persistence.</param>
-    /// <param name="optimizationKey">The optimization key for revert step persistence.</param>
-    /// <param name="progress">An optional progress reporter.</param>
-    /// <returns>The list of steps that remain failed after retry.</returns>
     public static async Task<List<OperationStepResult>> RetryFailedStepsAsync(
         IReadOnlyList<OperationStepResult> failedSteps,
         bool reverseOrder,
@@ -333,15 +309,6 @@ public class OptimizationService(
         ).FailedSteps;
     }
 
-    /// <summary>Retries failed operation steps and returns both recovered and remaining failed steps for detailed inspection. Automatically persists recovered revert steps if a <see cref="RevertManager"/> is provided.</summary>
-    /// <param name="failedSteps">The steps that failed and should be retried.</param>
-    /// <param name="reverseOrder">If <see langword="true"/>, retries steps in descending index order.</param>
-    /// <param name="logger">The logger for retry diagnostics.</param>
-    /// <param name="revertManager">Optional revert manager to persist recovered revert steps.</param>
-    /// <param name="optimizationId">The optimization ID for revert step persistence.</param>
-    /// <param name="optimizationKey">The optimization key for revert step persistence.</param>
-    /// <param name="progress">An optional progress reporter.</param>
-    /// <returns>A <see cref="RetryFailedStepsResult"/> containing both recovered and remaining failed steps.</returns>
     public static async Task<RetryFailedStepsResult> RetryFailedStepsWithResultsAsync(
         IReadOnlyList<OperationStepResult> failedSteps,
         bool reverseOrder,
@@ -484,8 +451,6 @@ public class OptimizationService(
         }
     }
 
-    /// <summary>Deletes all files in the downloads directory. Silently skips files that cannot be deleted.</summary>
-    /// <param name="logger">The logger for deletion errors.</param>
     public static void ClearDownloads(ILogger logger)
     {
         if (!Directory.Exists(Shared.DownloadsDirectory))
@@ -502,22 +467,13 @@ public class OptimizationService(
     }
 }
 
-/// <summary>Represents the result of a system restore point creation attempt.</summary>
 public enum RestorePointResult
 {
-    /// <summary>The restore point was created successfully.</summary>
     Success,
-
-    /// <summary>The restore point creation failed.</summary>
     Failed,
-
-    /// <summary>The creation was skipped because a restore point was already created within the frequency limit (24 hours).</summary>
     FrequencyLimitReached,
 }
 
-/// <summary>Represents the result of retrying failed operation steps, separating recovered steps from those that remain failed.</summary>
-/// <param name="FailedSteps">The steps that remain failed after retry.</param>
-/// <param name="RecoveredSteps">The steps that succeeded on retry.</param>
 public sealed record RetryFailedStepsResult(
     List<OperationStepResult> FailedSteps,
     List<OperationStepResult> RecoveredSteps

@@ -436,11 +436,8 @@
   <data name="Service.Service.Error.NotFound" xml:space="preserve">
     <value>未找到服务</value>
   </data>
-  <data name="Service.Service.Info.SkippedNotFound" xml:space="preserve">
-    <value>未找到服务 '{0}'（已跳过）</value>
-  </data>
-  <data name="Service.Service.Error.ChangeStartupTypeFailed" xml:space="preserve">
-    <value>更改服务启动类型失败</value>
+  <data name="Service.Service.Error.UpdateRegistryForStartupTypeFailed" xml:space="preserve">
+    <value>更新启动类型注册表失败</value>
   </data>
   <data name="Service.Service.Error.ChangeStartModeFailedWithCode" xml:space="preserve">
     <value>更改启动模式失败（错误代码：{0}）</value>
@@ -659,7 +656,7 @@
     <value>应用高性能电源计划</value>
   </data>
   <data name="Optimizer.PowerManagement.InstallOptimizerDuckPowerPlan.ShortDescription" xml:space="preserve">
-    <value>安装定制的高性能电源计划，让系统始终以最高速度运行。警告：在某些系统上可能导致任务管理器错误显示 100% CPU 使用率，实际 CPU 负载不受影响。</value>
+    <value>安装定制的高性能电源计划，让系统始终以最高速度运行。</value>
   </data>
   <data name="Optimizer.PowerManagement.InstallOptimizerDuckPowerPlan.Progress.Importing" xml:space="preserve">
     <value>正在导入并激活电源计划...</value>

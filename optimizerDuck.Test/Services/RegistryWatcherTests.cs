@@ -85,7 +85,7 @@ public class RegistryWatcherTests : IDisposable
         watcher.Watch(TestRoot);
 
         // Give the watcher thread time to start and block on RegNotifyChangeKeyValue
-        await Task.Delay(500, TestContext.Current.CancellationToken);
+        await Task.Delay(500);
 
         // Write a value to trigger the notification
         using var key = Registry.CurrentUser.OpenSubKey(TestRootNative, writable: true);
@@ -93,10 +93,7 @@ public class RegistryWatcherTests : IDisposable
         key.SetValue("TestValue", 42);
 
         // Wait for the event with a timeout
-        var completed = await Task.WhenAny(
-            tcs.Task,
-            Task.Delay(5000, TestContext.Current.CancellationToken)
-        );
+        var completed = await Task.WhenAny(tcs.Task, Task.Delay(5000));
         Assert.Equal(tcs.Task, completed);
 
         var firedPath = await tcs.Task;
@@ -113,12 +110,12 @@ public class RegistryWatcherTests : IDisposable
         watcher.Watch(TestRoot);
 
         // Give the watcher time to attempt opening the key and start its retry loop
-        await Task.Delay(300, TestContext.Current.CancellationToken);
+        await Task.Delay(300);
 
         watcher.Unwatch(TestRoot);
 
         // Give cancellation time to interrupt any in-flight delay/operation
-        await Task.Delay(500, TestContext.Current.CancellationToken);
+        await Task.Delay(500);
 
         // Create key and write — at this point the watcher should be stopped
         using var key = Registry.CurrentUser.CreateSubKey(TestRootNative);
@@ -126,7 +123,7 @@ public class RegistryWatcherTests : IDisposable
         key.SetValue("TestValue", 99);
 
         // Extra settle time to ensure no late notification arrives
-        await Task.Delay(1500, TestContext.Current.CancellationToken);
+        await Task.Delay(1500);
 
         Assert.Equal(0, fireCount);
     }
@@ -163,7 +160,7 @@ public class RegistryWatcherTests : IDisposable
         watcher.Watch(pathB);
 
         // Give watcher threads time to block on RegNotifyChangeKeyValue
-        await Task.Delay(500, TestContext.Current.CancellationToken);
+        await Task.Delay(500);
 
         // Write to path A
         using (var keyA = Registry.CurrentUser.OpenSubKey(pathANative, writable: true))
@@ -179,14 +176,8 @@ public class RegistryWatcherTests : IDisposable
             keyB.SetValue("Val", 2);
         }
 
-        var completedA = await Task.WhenAny(
-            tcsA.Task,
-            Task.Delay(5000, TestContext.Current.CancellationToken)
-        );
-        var completedB = await Task.WhenAny(
-            tcsB.Task,
-            Task.Delay(5000, TestContext.Current.CancellationToken)
-        );
+        var completedA = await Task.WhenAny(tcsA.Task, Task.Delay(5000));
+        var completedB = await Task.WhenAny(tcsB.Task, Task.Delay(5000));
 
         Assert.Equal(tcsA.Task, completedA);
         Assert.Equal(tcsB.Task, completedB);

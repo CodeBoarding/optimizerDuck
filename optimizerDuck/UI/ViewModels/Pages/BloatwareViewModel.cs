@@ -64,10 +64,8 @@ public partial class BloatwareViewModel : ViewModel
 
     public ObservableCollection<AppXPackage> AppxPackages { get; } = [];
 
-    private int _selectedCount;
-
-    public bool HasSelectedItems => _selectedCount > 0;
-    public int SelectedCount => _selectedCount;
+    public bool HasSelectedItems => AppxPackages.Any(x => x.IsSelected);
+    public int SelectedCount => AppxPackages.Count(x => x.IsSelected);
     public bool HasData => _allPackages.Count > 0;
     public bool HasSafePackages => AppxPackages.Any(x => x.Risk == AppRisk.Safe);
 
@@ -143,13 +141,6 @@ public partial class BloatwareViewModel : ViewModel
         AppxPackages.Clear();
         foreach (var package in filtered)
             AppxPackages.Add(package);
-
-        _selectedCount = 0;
-        foreach (var p in filtered)
-        {
-            if (p.IsSelected)
-                _selectedCount++;
-        }
     }
 
     #region Property Changed
@@ -158,9 +149,6 @@ public partial class BloatwareViewModel : ViewModel
     {
         if (e.PropertyName == nameof(AppXPackage.IsSelected))
         {
-            if (sender is AppXPackage pkg)
-                _selectedCount += pkg.IsSelected ? 1 : -1;
-
             UpdateProperties();
             RemoveSelectedCommand.NotifyCanExecuteChanged();
         }

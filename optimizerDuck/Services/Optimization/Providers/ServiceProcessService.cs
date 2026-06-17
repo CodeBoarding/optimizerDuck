@@ -10,8 +10,6 @@ namespace optimizerDuck.Services.Optimization.Providers;
 
 public static class ServiceProcessService
 {
-    private const int ErrorServiceDoesNotExist = 1060;
-
     private static readonly AsyncLocal<string?> _lastError = new();
     private static readonly AsyncLocal<string?> _lastErrorDetail = new();
 
@@ -28,16 +26,7 @@ public static class ServiceProcessService
     internal static string? LastError => _lastError.Value;
     internal static string? LastErrorDetail => _lastErrorDetail.Value;
 
-    /// <summary>Retrieves the current startup type of a Windows service by running <c>sc.exe qc</c>.</summary>
-    /// <param name="serviceName">The internal service name.</param>
-    /// <returns>
-    /// A tuple. <c>StartupType</c> is the type if parsed successfully.
-    /// <c>NotFound</c> is <see langword="true"/> when the service does not exist (exit code 1060),
-    /// <see langword="false"/> for other errors.
-    /// </returns>
-    public static async Task<(ServiceStartupType? StartupType, bool NotFound)> GetStartupTypeAsync(
-        string serviceName
-    )
+    public static async Task<ServiceStartupType?> GetStartupTypeAsync(string serviceName)
     {
         try
         {
@@ -45,14 +34,13 @@ public static class ServiceProcessService
 
             if (exitCode != 0)
             {
-                var notFound = exitCode == ErrorServiceDoesNotExist;
                 ExecutionScope.LogWarning(
                     "[SERVICE][{Name}] sc.exe qc failed with exit code {ExitCode}: {Stderr}",
                     serviceName,
                     exitCode,
                     stderr
                 );
-                return (null, notFound);
+                return null;
             }
 
             var startMatch = _startTypeRegex.Match(stdout);
@@ -62,21 +50,20 @@ public static class ServiceProcessService
                     "[SERVICE][{Name}] Could not parse START_TYPE from sc.exe qc output",
                     serviceName
                 );
-                return (null, false);
+                return null;
             }
 
             var startValue = int.Parse(startMatch.Groups[1].Value);
 
-            var result = startValue switch
+            return startValue switch
             {
                 2 => _delayedRegex.IsMatch(stdout)
                     ? ServiceStartupType.AutomaticDelayedStart
                     : ServiceStartupType.Automatic,
                 3 => ServiceStartupType.Manual,
                 4 => ServiceStartupType.Disabled,
-                _ => (ServiceStartupType?)null,
+                _ => null,
             };
-            return (result, false);
         }
         catch (Exception ex)
         {
@@ -85,13 +72,10 @@ public static class ServiceProcessService
                 "Failed to get startup type for {ServiceName}",
                 serviceName
             );
-            return (null, false);
+            return null;
         }
     }
 
-    /// <summary>Changes the startup type of a single Windows service via <c>sc.exe config</c>. Records a revert step if the original type differs.</summary>
-    /// <param name="item">The service item with the target startup type.</param>
-    /// <returns><see langword="true"/> if the change succeeded, otherwise <see langword="false"/>.</returns>
     public static async Task<bool> ChangeServiceStartupTypeAsync(ServiceItem item)
     {
         _lastError.Value = _lastErrorDetail.Value = null;
@@ -105,43 +89,7 @@ public static class ServiceProcessService
 
         try
         {
-            var (originalStartupType, notFound) = await GetStartupTypeAsync(item.Name);
-
-            if (notFound)
-            {
-                sw.Stop();
-                var skipDescription = string.Format(
-                    Translations.Service_Service_Info_SkippedNotFound,
-                    item.Name
-                );
-                ExecutionScope.LogInfo("[SERVICE][{Name}] not found, skipping", item.Name);
-                ExecutionScope.Track(nameof(ChangeServiceStartupTypeAsync), true);
-                ExecutionScope.RecordStep(
-                    Translations.Service_Service_Name,
-                    skipDescription,
-                    true,
-                    null
-                );
-                return true;
-            }
-
-            if (originalStartupType == null)
-            {
-                sw.Stop();
-                ExecutionScope.LogInfo(
-                    "[SERVICE][{Name}][FAIL][D={Duration}] could not query startup type",
-                    item.Name,
-                    sw.Elapsed.FormatTime()
-                );
-                ExecutionScope.Track(nameof(ChangeServiceStartupTypeAsync), false);
-                ExecutionScope.RecordStep(
-                    Translations.Service_Service_Name,
-                    description,
-                    false,
-                    null
-                );
-                return false;
-            }
+            var originalStartupType = await GetStartupTypeAsync(item.Name);
 
             var scType = item.StartupType switch
             {
@@ -167,7 +115,7 @@ public static class ServiceProcessService
             if (success)
             {
                 ServiceRevertStep? revertStep = null;
-                if (originalStartupType.Value != item.StartupType)
+                if (originalStartupType.HasValue && originalStartupType.Value != item.StartupType)
                     revertStep = new ServiceRevertStep
                     {
                         ServiceName = item.Name,
@@ -191,7 +139,8 @@ public static class ServiceProcessService
                 return true;
             }
 
-            _lastError.Value = Translations.Service_Service_Error_ChangeStartupTypeFailed;
+            _lastError.Value =
+                Translations.Service_Service_Error_UpdateRegistryForStartupTypeFailed;
             ExecutionScope.LogInfo(
                 "[SERVICE][{Name}][FAIL][D={Duration}] startup -> {StartupType}",
                 item.Name,
@@ -241,8 +190,7 @@ public static class ServiceProcessService
 
     private static async Task<(int ExitCode, string Stdout, string Stderr)> RunScExeAsync(
         string arguments,
-        int timeoutMs
-    )
+        int timeoutMs)
     {
         using var process = new Process
         {
@@ -268,11 +216,7 @@ public static class ServiceProcessService
         }
         catch (OperationCanceledException)
         {
-            try
-            {
-                process.Kill();
-            }
-            catch { }
+            try { process.Kill(); } catch { }
         }
 
         var stdout = await stdoutTask;
